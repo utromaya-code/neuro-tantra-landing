@@ -18,9 +18,11 @@
             --primary-deep: #0d1442;
             --violet: #4a148c;
             --violet-light: #7b1fa2;
-            --gold: #d4af37;
+            --gold: #e6b84c;
             --gold-light: #ffd700;
-            --copper: #b87333;
+            --copper: #c4902f;
+            --neuro-cyan: #06b6d4;
+            --neuro-teal: #0d9488;
             --bg-dark: #0a0e1a;
             --bg-card: #121827;
             --bg-light: #1a2235;
@@ -365,8 +367,8 @@
         /* ===== STATS BAR (как на neuro-universe) ===== */
         .stats-bar {
             padding: 28px 24px;
-            background: linear-gradient(135deg, rgba(74, 20, 140, 0.4) 0%, rgba(26, 35, 126, 0.5) 100%);
-            border-bottom: 2px solid rgba(212, 175, 55, 0.25);
+            background: linear-gradient(135deg, rgba(74, 20, 140, 0.4) 0%, rgba(26, 35, 126, 0.5) 50%, rgba(6, 182, 212, 0.08) 100%);
+            border-bottom: 2px solid rgba(6, 182, 212, 0.2);
         }
         .stats-bar__inner {
             max-width: 1200px;
@@ -407,6 +409,50 @@
             font-weight: 600;
             color: var(--gold-light);
             letter-spacing: 0.5px;
+        }
+
+        /* ===== NEURO VISUAL STRIP (мозг + наука) ===== */
+        .neuro-strip {
+            padding: 60px 0;
+            background: linear-gradient(180deg, var(--bg-section) 0%, rgba(6, 182, 212, 0.06) 50%, var(--bg-section) 100%);
+        }
+        .neuro-strip__title {
+            text-align: center;
+            font-family: var(--font-head);
+            font-size: clamp(24px, 3.5vw, 32px);
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 28px;
+        }
+        .neuro-strip__title span { color: var(--neuro-cyan); }
+        .neuro-strip__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .neuro-strip__item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            aspect-ratio: 4/3;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+            transition: all 0.4s var(--ease);
+        }
+        .neuro-strip__item:hover {
+            border-color: rgba(6, 182, 212, 0.45);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 48px rgba(0,0,0,0.35), 0 0 30px rgba(6, 182, 212, 0.1);
+        }
+        .neuro-strip__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .neuro-strip__grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
         }
 
         /* ===== BLOCK: FOR WHOM (5 cards) ===== */
@@ -524,7 +570,7 @@
         }
         .what-is__table-wrap {
             background: var(--bg-card);
-            border: 1px solid var(--glass-border);
+            border: 1px solid rgba(6, 182, 212, 0.15);
             border-radius: var(--radius);
             overflow: hidden;
         }
@@ -544,8 +590,8 @@
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: var(--gold);
-            background: rgba(212, 175, 55, 0.08);
+            color: var(--neuro-cyan);
+            background: rgba(6, 182, 212, 0.1);
         }
         .what-is__table tr:last-child td { border-bottom: none; }
         .what-is__table td:first-child {
@@ -1298,6 +1344,22 @@
         <p class="science-badge__text">Научный подход к тантре без эзотерики</p>
     </div>
 
+    <!-- NEURO STRIP: мозг и нейронаука -->
+    <section class="neuro-strip" aria-label="Нейронаука и мозг">
+        <h2 class="neuro-strip__title reveal">Наука о мозге и теле: <span>нейрофизиология практик</span></h2>
+        <div class="neuro-strip__grid">
+            <div class="neuro-strip__item reveal">
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=90" alt="Мозг и нейронаука — основа курса">
+            </div>
+            <div class="neuro-strip__item reveal">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=90" alt="Нервная система и исследования мозга">
+            </div>
+            <div class="neuro-strip__item reveal">
+                <img src="https://images.unsplash.com/photo-1628595351029-cfbb296adee0?w=600&q=90" alt="Нейросети и нейропластичность">
+            </div>
+        </div>
+    </section>
+
     <!-- BLOCK 2: FOR WHOM -->
     <section class="for-whom" id="for-whom">
         <div class="container">
@@ -1368,7 +1430,7 @@
             </div>
             <div class="what-is__grid">
                 <div class="what-is__img reveal">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=85" alt="Нейронаука и мозг — основа курса">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=90" alt="Нейронаука и мозг — основа курса">
                 </div>
                 <div class="what-is__text-table">
                 <div class="what-is__text reveal">
@@ -1506,10 +1568,10 @@
     <!-- GALLERY STRIP -->
     <section class="gallery-strip" aria-label="Галерея">
         <div class="gallery-strip__grid">
-            <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=85" alt="Практика и атмосфера"></div>
+            <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1628595351029-cfbb296adee0?w=600&q=90" alt="Нейронаука и мозг"></div>
             <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&q=85" alt="Осознанность и фокус"></div>
             <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&q=85" alt="Медитация в группе"></div>
-            <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?w=600&q=85" alt="Звук и расслабление"></div>
+            <div class="gallery-strip__item reveal"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=90" alt="Нервная система и практики"></div>
         </div>
     </section>
 
