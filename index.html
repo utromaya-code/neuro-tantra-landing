@@ -52,12 +52,12 @@
             overflow-x: hidden;
         }
         a { text-decoration: none; color: inherit; }
-        .author__bio a, .suits__col a, .accordion__body-inner a, .program__intro a, .faq .accordion__body-inner a, .footer__tagline a {
+        .author__bio a, .suits__col a, .accordion__body-inner a, .program__intro a, .faq .accordion__body-inner a, .footer__tagline a, .cta-section__bonus a, .author__club-note a {
             color: var(--gold);
             border-bottom: 1px solid rgba(212, 175, 55, 0.4);
             transition: color 0.25s, border-color 0.25s;
         }
-        .author__bio a:hover, .suits__col a:hover, .accordion__body-inner a:hover, .program__intro a:hover, .faq .accordion__body-inner a:hover, .footer__tagline a:hover {
+        .author__bio a:hover, .suits__col a:hover, .accordion__body-inner a:hover, .program__intro a:hover, .faq .accordion__body-inner a:hover, .footer__tagline a:hover, .cta-section__bonus a:hover, .author__club-note a:hover {
             color: var(--gold-light);
             border-color: var(--gold);
         }
@@ -1009,6 +1009,15 @@
             color: var(--text-muted);
         }
         .author__stat strong { display: block; color: var(--gold); margin-bottom: 4px; }
+        .author__stat a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
+        .author__stat a:hover { color: var(--gold-light); }
+        .author__club-note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .author__club-note a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
+        .author__club-note a:hover { color: var(--gold-light); }
         @media (max-width: 900px) {
             .author__grid { grid-template-columns: 1fr; }
             .author__photo-wrap { max-width: 320px; }
@@ -1125,6 +1134,17 @@
             font-size: 42px;
             color: var(--gold);
             margin-bottom: 8px;
+        }
+        .format__price-wrap .price del {
+            font-size: 28px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 12px;
+        }
+        .cta-section__bonus del {
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 6px;
         }
         .format__price-wrap .cta { margin-top: 24px; }
         @media (max-width: 900px) {
@@ -1694,8 +1714,9 @@
                         <div class="author__stat"><strong>1000+</strong> учеников по всему миру</div>
                         <div class="author__stat"><strong>4.9/5</strong> средний рейтинг курсов</div>
                         <div class="author__stat"><strong>20+ лет</strong> практики в буддийских традициях</div>
-                        <div class="author__stat">Основатель Клуба «Вселенная Нейрохакинга»</div>
+                        <div class="author__stat">Основатель <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуба «Вселенная Нейрохакинга»</a></div>
                     </div>
+                    <p class="author__club-note">Курс — часть экосистемы клуба. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Подробнее о клубе</a>. Продолжение следует…</p>
                     <div class="author__extra-img reveal">
                         <img src="https://picsum.photos/seed/practice/600/400" alt="Практика медитации — курс Нейрофизиология тантры" loading="lazy">
                     </div>
@@ -1777,7 +1798,7 @@
             </div>
             <div class="format__price-wrap reveal">
                 <p>Стоимость и условия</p>
-                <p class="format__price-wrap price">Стоимость: 29 900 ₽</p>
+                <p class="format__price-wrap price"><del>49 900 ₽</del> <strong>29 900 ₽</strong> — ранняя цена</p>
                 <p>Доступ к записям лекций и практик — 6 месяцев. Рассрочка: возможна оплата в 2–3 платежа. Старт курса: [дата]</p>
                 <a href="#cta" class="btn btn-primary cta">Записаться на курс</a>
             </div>
@@ -1877,7 +1898,7 @@
         <div class="container">
             <h2 class="cta-section__title reveal">Начните трансформацию сегодня</h2>
             <p class="cta-section__text reveal">Присоединяйтесь к курсу и освойте тантрические техники через язык современной нейронауки — без эзотерики, с реальными результатами для снижения стресса, улучшения сексуальности и возвращения чувствительности тела.</p>
-            <p class="cta-section__bonus reveal">Стоимость: 29 900 ₽. Доступ к записям — 6 месяцев. Все материалы и ссылки — на GetCourse в записи лекции, оповещения — через Telegram-бота. Курс начинается [дата].</p>
+            <p class="cta-section__bonus reveal"><del>49 900 ₽</del> <strong>29 900 ₽</strong> — ранняя цена. Доступ к записям — 6 месяцев. Все материалы и ссылки — на GetCourse в записи лекции, оповещения — через Telegram-бота. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a>. Продолжение следует… Курс начинается [дата].</p>
 
             <form class="form-reg" id="formReg" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-success">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
@@ -1901,13 +1922,13 @@
             <div class="footer__top">
                 <div>
                     <div class="footer__logo">Нейро<span>тантра</span></div>
-                    <p class="footer__tagline">Курс-ретрит «Нейрофизиология тантры» — тантра без эзотерики, с научным объяснением. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">neuro-universe.ru</a></p>
+                    <p class="footer__tagline">Курс-ретрит «Нейрофизиология тантры» — тантра без эзотерики, с научным объяснением. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a> — neuro-universe.ru. Продолжение следует…</p>
                 </div>
                 <div class="footer__col">
                     <h4>Контакты</h4>
                     <ul>
                         <li><a href="mailto:info@neuro-universe.ru">info@neuro-universe.ru</a></li>
-                        <li><a href="https://neuro-universe.ru" target="_blank" rel="noopener">neuro-universe.ru</a></li>
+                        <li><a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга» — neuro-universe.ru</a></li>
                         <li><a href="https://t.me/LeoKutuzov" target="_blank" rel="noopener">Telegram: @LeoKutuzov</a></li>
                     </ul>
                 </div>
