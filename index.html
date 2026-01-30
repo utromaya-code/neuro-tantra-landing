@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Нейрофизиология тантры — курс-ретрит | Тантра без эзотерики</title>
     <meta name="description" content="Курс-ретрит: как древние тантрические техники работают на уровне нервной системы. 8 лекций + 15 практик. Без мистики — с научным объяснением.">
     <meta property="og:title" content="Нейрофизиология тантры — энергия, чакры, мозг и трансформация">
@@ -220,6 +220,10 @@
             .nav__links, .nav__cta { display: none; }
             .nav__burger { display: flex; }
             .nav__mobile { display: flex; }
+        }
+        @media (max-width: 768px) {
+            .nav { padding: 14px 20px; }
+            .nav.scrolled { padding: 12px 20px; }
         }
 
         /* ===== HERO ===== */
@@ -492,7 +496,7 @@
         .for-whom__prereq a:hover { color: var(--gold-light); }
         .prep-courses {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
             gap: 20px;
             margin-top: 24px;
         }
@@ -541,7 +545,7 @@
         .prep-courses__card:hover .prep-courses__link { color: var(--gold-light); }
         .for-whom__grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
             gap: 24px;
         }
         .for-whom__card {
@@ -621,7 +625,8 @@
             background: var(--bg-card);
             border: 1px solid rgba(6, 182, 212, 0.15);
             border-radius: var(--radius);
-            overflow: hidden;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         .what-is__table {
             width: 100%;
@@ -657,6 +662,10 @@
             .what-is__grid { grid-template-columns: 1fr; }
             .what-is__img { max-width: 400px; margin: 0 auto; }
             .what-is__img img { height: 280px; }
+        }
+        @media (max-width: 768px) {
+            .what-is__table th, .what-is__table td { padding: 12px 14px; font-size: 14px; }
+            .what-is__table td:first-child { width: 42%; }
         }
 
         /* ===== BLOCK: PROGRAM (accordion + practical) ===== */
@@ -725,6 +734,10 @@
             transition: background 0.3s;
         }
         .accordion__head:hover { background: rgba(212, 175, 55, 0.06); }
+        @media (max-width: 480px) {
+            .accordion__head { padding: 16px 18px; font-size: 15px; line-height: 1.4; }
+            .accordion__body-inner { padding: 0 18px 20px; }
+        }
         .accordion__head .num {
             color: var(--gold);
             margin-right: 12px;
@@ -829,7 +842,7 @@
         }
         .results__grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: 24px;
         }
         .results__card {
@@ -1146,6 +1159,10 @@
             text-decoration: line-through;
             margin-right: 6px;
         }
+        @media (max-width: 480px) {
+            .format__price-wrap .price { font-size: 32px; line-height: 1.3; }
+            .format__price-wrap .price del { font-size: 20px; margin-right: 8px; }
+        }
         .format__price-wrap .cta { margin-top: 24px; }
         @media (max-width: 900px) {
             .format__grid { grid-template-columns: 1fr; }
@@ -1200,6 +1217,9 @@
             font-size: 15px;
             color: var(--gold);
             margin-bottom: 40px;
+        }
+        @media (max-width: 480px) {
+            .cta-section__bonus { font-size: 14px; line-height: 1.6; }
         }
         .form-reg {
             max-width: 440px;
@@ -1302,8 +1322,8 @@
         /* ===== STICKY CTA ===== */
         .sticky-cta {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
+            bottom: max(24px, env(safe-area-inset-bottom, 24px));
+            right: max(24px, env(safe-area-inset-right, 24px));
             z-index: 900;
             padding: 14px 24px;
             background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
