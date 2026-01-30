@@ -490,6 +490,55 @@
         }
         .for-whom__prereq a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
         .for-whom__prereq a:hover { color: var(--gold-light); }
+        .prep-courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .prep-courses__card {
+            display: block;
+            padding: 24px;
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(74, 20, 140, 0.15) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            transition: all 0.35s var(--ease);
+            color: var(--text);
+        }
+        .prep-courses__card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .prep-courses__tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        .prep-courses__card h3 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .prep-courses__card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        .prep-courses__link {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gold);
+            transition: color 0.25s;
+        }
+        .prep-courses__card:hover .prep-courses__link { color: var(--gold-light); }
         .for-whom__grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1369,7 +1418,21 @@
             <div class="for-whom__header reveal">
                 <span class="section-tag">Аудитория</span>
                 <h2 class="section-title">Этот курс для вас, если вы:</h2>
-                <p class="for-whom__prereq">Новичок в медитации? Рекомендуем начать с сертификационного курса <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> — 110 часов теории и практики, научный подход без эзотерики.</p>
+                <p class="for-whom__prereq">Новичок в медитации? Оба курса отлично подходят для подготовки к «Нейрофизиологии тантры». <strong>Продолжение следует…</strong></p>
+            <div class="prep-courses reveal">
+                <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener" class="prep-courses__card">
+                    <span class="prep-courses__tag">Подготовка</span>
+                    <h3>Эксперт медитации</h3>
+                    <p>Сертификационный инструкторский курс: 110 часов теории и практики, анатомия и нейрофизиология медитации, школы и традиции. Научный подход без эзотерики.</p>
+                    <span class="prep-courses__link">neuro-universe.ru/meditation →</span>
+                </a>
+                <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener" class="prep-courses__card">
+                    <span class="prep-courses__tag">Подготовка</span>
+                    <h3>Избавление от ядов ума</h3>
+                    <p>Нейрофизиология сознания: медитация и коррекция когнитивных искажений. Эмоции, внимание, привычки — от теории к устойчивым изменениям мышления и поведения.</p>
+                    <span class="prep-courses__link">neuro-universe.ru/neurophys →</span>
+                </a>
+            </div>
             </div>
             <div class="for-whom__grid">
                 <div class="for-whom__card reveal">
@@ -1487,7 +1550,7 @@
                 <h2 class="section-title">8 теоретических занятий + 15 практических сессий</h2>
                 <p class="section-subtitle">Теория + ежедневная практика в прямом эфире (2 недели утренних сессий по 45 минут)</p>
             </div>
-            <p class="program__intro reveal">Собранные материалы являются не только логическим продолжением курса <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> и «Избавление от ядов ума», но и отдельным пособием для людей без предварительного глубокого погружения в нейрофизиологию духовного развития.</p>
+            <p class="program__intro reveal">Собранные материалы являются не только логическим продолжением курса <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> и <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>, но и отдельным пособием для людей без предварительного глубокого погружения в нейрофизиологию духовного развития.</p>
 
             <div class="program__visual reveal">
                 <img src="https://images.unsplash.com/photo-1518611012118-696084aa579a?w=1200&q=85" alt="Утренняя практика йоги и медитации">
@@ -1590,7 +1653,7 @@
                         <li>Хотите углубить практику медитации или освоить тантрические техники</li>
                         <li>Ищете решение проблем со стрессом, сном, чувствительностью, сексуальностью</li>
                         <li>Готовы к ежедневным практикам в течение 2 недель</li>
-                        <li>Прошли курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / «Избавление от ядов ума» ИЛИ имеете базовый опыт медитации (от 3–6 месяцев)</li>
+                        <li>Прошли курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a> ИЛИ имеете базовый опыт медитации (от 3–6 месяцев)</li>
                         <li>Хотите понимать механизмы работы практик, а не слепо следовать инструкциям</li>
                     </ul>
                 </div>
@@ -1622,7 +1685,7 @@
                     <p class="author__role">Президент Федерации йоги и медитации Санкт-Петербурга</p>
                     <p><strong>Образование и квалификация:</strong> Биологический факультет МГУ им. М.В. Ломоносова; Институт «Прикладной неврологии» (Франция); обучение в Stanford University (США). Более 20 лет изучения нейрофизиологии медитации и йоги.</p>
                     <p><strong>Практический опыт:</strong> С 28 лет регулярно посещает буддийские монастыри и ретриты по всей планете. Практикует и преподает традиции: Ваджраяна, Махаяна, Дзогчен (Ати-йога). Обучил более 1000 учеников.</p>
-                    <p>Автор курсов: <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a>, «Избавление от ядов ума», «Пробуждение через наслаждение», «Золотая коллекция медитаций», «Нейрохакинг для женщин», «Нейрофизиология осознанных движений. Искусство расслабления».</p>
+                    <p>Автор курсов: <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a>, <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>, «Пробуждение через наслаждение», «Золотая коллекция медитаций», «Нейрохакинг для женщин», «Нейрофизиология осознанных движений. Искусство расслабления».</p>
                     <p>Междисциплинарные научные знания о мозге позволяют Леониду активно использовать практические инструменты коррекции физического и психического здоровья, соединяя древние буддийские практики с современной нейронаукой.</p>
                     <div class="author__quote">
                         <p>«За 20 лет практики и преподавания я понял, что тантрические техники — это невероятно мощные инструменты работы с нервной системой. Однако большинство людей отталкивает эзотерический язык и мистификация этих практик. Мой путь от биолога до практика Ваджраяны научил меня: древние техники работают не потому, что "магические", а потому что точно воздействуют на конкретные системы мозга и тела. Я решил перевести тантрический подход на язык современной нейрофизиологии, чтобы сделать эти мощные практики доступными для тех, кто ищет реальные результаты. Этот курс — результат синтеза глубокого изучения тибетского буддизма, нейрофизиологии и многолетней личной практики. Здесь нет места шаманизму и эзотерике — только проверенные техники с научным объяснением того, как и почему они работают.»</p>
@@ -1729,7 +1792,7 @@
                         <button class="accordion__head">Нужен ли опыт медитации для участия в курсе? <span class="accordion__icon">+</span></button>
                         <div class="accordion__body">
                             <div class="accordion__body-inner">
-                                <p>Желательно иметь базовый опыт медитации (3–6 месяцев регулярной практики) или пройти курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / «Избавление от ядов ума». Курс подходит и как отдельное пособие для людей с опытом самостоятельной практики. Если вы совсем новичок, рекомендуем начать с <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">базового курса медитации</a>.</p>
+                                <p>Желательно иметь базовый опыт медитации (3–6 месяцев регулярной практики) или пройти курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>. Курс подходит и как отдельное пособие для людей с опытом самостоятельной практики. Если вы совсем новичок, рекомендуем начать с <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">базового курса медитации</a>.</p>
                             </div>
                         </div>
                     </div>
