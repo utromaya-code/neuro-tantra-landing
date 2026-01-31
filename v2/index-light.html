@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Курс-ретрит «Нейрофизиология тантры: энергия, чакры, каналы, визуализации, секс, мозг и глубокая трансформация»</title>
+    <title>Курс-ретрит «Нейрофизиология тантры» — светлая версия</title>
     <meta name="description" content="Теоретически-практический курс о том, как работают тантрические техники на уровне нервной системы. 8 теоретических занятий + 15 практических сессий. Соединяем древние знания с современной нейронаукой.">
     <meta property="og:title" content="Курс-ретрит «Нейрофизиология тантры: энергия, чакры, каналы, визуализации, секс, мозг и глубокая трансформация»">
     <meta property="og:description" content="Теоретически-практический курс о том, как работают тантрические техники на уровне нервной системы. Углублённое изучение тантры как технологии осознанной трансформации.">
@@ -17,34 +17,114 @@
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(00000000, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
     <noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute;left:-9999px;" alt=""></div></noscript>
     <style>
+        /* Светлая тема v2 */
         :root {
-            --primary: #2d1518;
-            --primary-deep: #1a0a0c;
-            --violet: #5c2a2a;
-            --violet-light: #8b4545;
+            --primary: #4a2c2e;
+            --primary-deep: #f5f2ed;
+            --violet: #8b5a5a;
+            --violet-light: #a67c7c;
             --burgundy: #6B2D2D;
-            --gold: #e6b84c;
-            --gold-light: #ffd700;
-            --copper: #c4902f;
-            --neuro-cyan: #06b6d4;
-            --neuro-teal: #0d9488;
-            --bg-dark: #0f0a0b;
-            --bg-card: #1a1214;
-            --bg-light: #22181a;
-            --bg-section: #120c0e;
-            --text: #e8eaf0;
-            --text-muted: #9ca3b8;
+            --gold: #b8860b;
+            --gold-light: #c9a227;
+            --copper: #9a7325;
+            --neuro-cyan: #0d9488;
+            --neuro-teal: #0f766e;
+            --bg-dark: #f8f6f3;
+            --bg-card: #ffffff;
+            --bg-light: #fdfcfa;
+            --bg-section: #f0ede8;
+            --text: #1a1514;
+            --text-muted: #5c534f;
             --accent: var(--gold);
-            --success: #22c55e;
-            --danger: #ef4444;
+            --success: #16a34a;
+            --danger: #dc2626;
             --font-head: 'Cormorant Garamond', Georgia, serif;
             --font-nav: 'Raleway', -apple-system, sans-serif;
             --font-body: 'Open Sans', -apple-system, sans-serif;
             --ease: cubic-bezier(0.4, 0, 0.2, 1);
             --radius: 16px;
             --radius-lg: 24px;
-            --glass: rgba(26, 18, 20, 0.75);
-            --glass-border: rgba(212, 175, 55, 0.15);
+            --glass: rgba(255, 255, 255, 0.9);
+            --glass-border: rgba(107, 45, 45, 0.18);
+            --button-text-on-accent: #1a0a0c;
+        }
+
+        /* Светлая тема: дополнительные переопределения */
+        .nav.scrolled {
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .science-badge {
+            background: linear-gradient(90deg, rgba(184,134,11,0.1) 0%, rgba(107,45,45,0.06) 50%, rgba(184,134,11,0.1) 100%);
+            border-top-color: rgba(107,45,45,0.15);
+            border-bottom-color: rgba(107,45,45,0.15);
+        }
+        .science-badge__text { color: var(--burgundy); }
+        .neuro-strip__item {
+            border-color: rgba(107,45,45,0.15);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .neuro-strip__item:hover {
+            border-color: rgba(107,45,45,0.35);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.9);
+            border: 1px solid rgba(107,45,45,0.12);
+        }
+        .testimonial-card:hover {
+            border-color: rgba(184,134,11,0.35);
+        }
+        .author-avatar {
+            color: var(--button-text-on-accent);
+        }
+        .objection-card {
+            background: rgba(255,255,255,0.85);
+            border-left-color: var(--burgundy);
+        }
+        .objection-card:hover {
+            background: rgba(184,134,11,0.06);
+        }
+        .popup-overlay {
+            background: rgba(0,0,0,0.5);
+        }
+        .popup__close {
+            background: rgba(0,0,0,0.06);
+            color: var(--text);
+        }
+        .popup__close:hover {
+            background: rgba(0,0,0,0.12);
+        }
+        .popup__input {
+            background: var(--bg-section);
+            border-color: rgba(107,45,45,0.2);
+        }
+        .cta-section__overlay {
+            background: linear-gradient(135deg, rgba(74,44,46,0.94) 0%, rgba(107,45,45,0.9) 100%);
+        }
+        .for-whom__card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(107,45,45,0.06) 100%);
+        }
+        .for-whom__card:hover {
+            box-shadow: 0 20px 48px rgba(0,0,0,0.1), 0 0 40px rgba(184,134,11,0.06);
+        }
+        .what-is {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(232,223,213,0.5) 50%, var(--bg-dark) 100%);
+        }
+        .results {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(232,223,213,0.4) 50%, var(--bg-dark) 100%);
+        }
+        .results__card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(107,45,45,0.04) 100%);
+        }
+        .testimonials-stats {
+            background: rgba(184,134,11,0.08);
+        }
+        .urgency-block {
+            background: rgba(184,134,11,0.08);
+            border-color: rgba(184,134,11,0.25);
+        }
+        .objections {
+            background: rgba(0,0,0,0.02);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -133,12 +213,12 @@
         }
         .btn-primary {
             background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
-            color: var(--bg-dark);
-            box-shadow: 0 8px 28px rgba(255, 215, 0, 0.4), 0 0 0 1px rgba(255,255,255,0.1) inset;
+            color: var(--button-text-on-accent);
+            box-shadow: 0 8px 28px rgba(184, 134, 11, 0.35), 0 0 0 1px rgba(0,0,0,0.06) inset;
         }
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 14px 36px rgba(255, 215, 0, 0.5), 0 0 0 1px rgba(255,255,255,0.15) inset;
+            box-shadow: 0 14px 36px rgba(184, 134, 11, 0.45), 0 0 0 1px rgba(0,0,0,0.08) inset;
         }
         .btn-outline {
             background: transparent;
@@ -192,14 +272,14 @@
         .nav__cta {
             padding: 12px 24px;
             background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
-            color: var(--bg-dark);
+            color: var(--button-text-on-accent);
             font-size: 13px;
             font-weight: 600;
             border-radius: 8px;
             transition: all 0.3s;
-            box-shadow: 0 4px 16px rgba(255, 215, 0, 0.3);
+            box-shadow: 0 4px 16px rgba(184, 134, 11, 0.3);
         }
-        .nav__cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4); }
+        .nav__cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(184, 134, 11, 0.4); }
         .nav__burger {
             display: none;
             flex-direction: column;
@@ -265,7 +345,7 @@
         .hero__bg {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, var(--primary-deep) 0%, var(--violet) 50%, var(--primary) 100%);
+            background: linear-gradient(135deg, #f8f6f3 0%, #efe8e0 45%, #e8dfd5 100%);
         }
         .hero__bg-img {
             position: absolute;
@@ -273,19 +353,19 @@
             background-image: url(https://picsum.photos/seed/hero-bg/1920/1080);
             background-size: cover;
             background-position: center;
-            opacity: 0.35;
+            opacity: 0.2;
         }
         .hero__bg-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(105deg, var(--primary-deep) 0%, transparent 45%, rgba(92,42,42,0.5) 100%);
+            background: linear-gradient(105deg, rgba(248,246,243,0.97) 0%, transparent 50%, rgba(232,223,213,0.6) 100%);
         }
         .hero__bg::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L30 60M0 30L60 30' stroke='rgba(212,175,55,0.03)' stroke-width='0.5'/%3E%3C/svg%3E");
-            opacity: 0.5;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L30 60M0 30L60 30' stroke='rgba(107,45,45,0.06)' stroke-width='0.5'/%3E%3C/svg%3E");
+            opacity: 0.8;
         }
         .hero__visual {
             position: absolute;
@@ -297,8 +377,8 @@
             height: 65%;
             border-radius: var(--radius-lg);
             overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            box-shadow: 0 24px 48px rgba(0,0,0,0.4);
+            border: 1px solid rgba(107, 45, 45, 0.2);
+            box-shadow: 0 24px 48px rgba(0,0,0,0.12);
         }
         .hero__visual img {
             width: 100%;
@@ -416,11 +496,11 @@
             .hero__subtitle { font-size: 16px; }
         }
 
-        /* ===== STATS BAR (как на neuro-universe) ===== */
+        /* ===== STATS BAR (светлая тема) ===== */
         .stats-bar {
             padding: 28px 24px;
-            background: linear-gradient(135deg, rgba(92, 42, 42, 0.4) 0%, rgba(45, 21, 24, 0.5) 50%, rgba(6, 182, 212, 0.08) 100%);
-            border-bottom: 2px solid rgba(6, 182, 212, 0.2);
+            background: linear-gradient(135deg, rgba(248, 246, 243, 0.95) 0%, rgba(240, 237, 232, 0.98) 50%, rgba(232, 223, 213, 0.9) 100%);
+            border-bottom: 2px solid rgba(107, 45, 45, 0.12);
         }
         .stats-bar__inner {
             max-width: 1200px;
@@ -1556,7 +1636,7 @@
             min-height: 52px;
             min-width: 52px;
             background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
-            color: var(--bg-dark);
+            color: var(--button-text-on-accent);
             font-family: var(--font-nav);
             font-size: 14px;
             font-weight: 600;
@@ -2554,7 +2634,7 @@
             <div class="footer__top">
                 <div>
                     <div class="footer__logo">Нейро<span>тантра</span></div>
-                    <p class="footer__tagline">Курс-ретрит «Нейрофизиология тантры» — тантра без эзотерики, с научным объяснением. <a href="index-light.html">Светлая версия</a> · <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a> — neuro-universe.ru. Продолжение следует…</p>
+                    <p class="footer__tagline">Курс-ретрит «Нейрофизиология тантры» — тантра без эзотерики, с научным объяснением. <a href="index.html">Тёмная версия</a> · <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a> — neuro-universe.ru. Продолжение следует…</p>
                 </div>
                 <div class="footer__col">
                     <h4>Контакты</h4>
