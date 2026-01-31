@@ -356,6 +356,20 @@
             max-width: 540px;
         }
         .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
+        .hero-social-proof {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .hero-social-proof p { margin: 5px 0; }
+        .cta-subtitle {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
         .hero__info-row {
             display: flex;
             flex-wrap: wrap;
@@ -871,11 +885,56 @@
             margin-bottom: 10px;
             color: var(--text);
         }
-        .results__card p {
+        .results__card p, .results__card ul {
             font-size: 14px;
             color: var(--text-muted);
             line-height: 1.7;
         }
+        .results__card ul { list-style: none; margin-top: 10px; }
+        .results__card ul li { padding: 4px 0; padding-left: 18px; position: relative; }
+        .results__card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: bold; }
+        .results__card--highlight {
+            border: 2px solid var(--gold-light);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--violet) 100%);
+        }
+        .highlight-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--copper);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .results-timeline {
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius);
+        }
+        .results-timeline h3 {
+            font-family: var(--font-head);
+            font-size: 28px;
+            margin-bottom: 28px;
+            text-align: center;
+            color: var(--text);
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .timeline-badge {
+            background: var(--gold-light);
+            color: var(--primary-deep);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .timeline-item p { margin: 0; font-size: 16px; color: var(--text-muted); }
 
         /* ===== BLOCK: SUITS / NOT SUITS (2 columns) ===== */
         .suits {
@@ -1347,6 +1406,164 @@
             box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5);
         }
 
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-section) 100%);
+        }
+        .testimonials__title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-family: var(--font-head);
+            font-size: clamp(32px, 4vw, 42px);
+            color: var(--text);
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s var(--ease), border-color 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .testimonial-card .stars { font-size: 20px; margin-bottom: 15px; }
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 15px; }
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gold-light), var(--copper));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-deep);
+        }
+        .author-name { font-weight: bold; margin-bottom: 5px; }
+        .author-role { font-size: 14px; color: var(--text-muted); }
+        .testimonials-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius);
+        }
+        .stat-item { text-align: center; }
+        .stat-number {
+            display: block;
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--gold-light), var(--copper));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .stat-item p { font-size: 16px; color: var(--text-muted); }
+
+        /* ===== OBJECTIONS ===== */
+        .objections {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .objections__title {
+            text-align: center;
+            font-family: var(--font-head);
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .objections__subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 60px;
+        }
+        .objections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 30px;
+        }
+        .objection-card {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--gold);
+            transition: all 0.3s var(--ease);
+        }
+        .objection-card:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateX(5px);
+        }
+        .objection-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--gold);
+        }
+        .objection-answer {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* ===== URGENCY (countdown + spots) ===== */
+        .urgency-block {
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--radius);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+        .countdown-label {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .time-unit { text-align: center; min-width: 80px; }
+        .time-value {
+            display: block;
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--gold-light), var(--copper));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+        .time-label { display: block; font-size: 14px; margin-top: 5px; opacity: 0.8; }
+        .spots-left { margin-top: 20px; text-align: center; font-size: 18px; }
+        .spots-left strong { color: var(--copper); font-size: 24px; }
+        @media (max-width: 768px) {
+            .time-value { font-size: 36px; }
+            .time-unit { min-width: 60px; }
+            .testimonials-stats { grid-template-columns: 1fr 1fr; }
+        }
+
         /* ===== REVEAL ANIMATIONS ===== */
         .reveal {
             opacity: 0;
@@ -1423,11 +1640,12 @@
             <li><a href="#what-is">Как это работает</a></li>
             <li><a href="#program">Программа</a></li>
             <li><a href="#results">Результаты</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
             <li><a href="#author">Об авторе</a></li>
             <li><a href="#format">Условия</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
-        <a href="#cta" class="nav__cta">Записаться на курс</a>
+        <a href="#cta" class="nav__cta">Начать трансформацию</a>
         <div class="nav__burger" id="navBurger">
             <span></span><span></span><span></span>
         </div>
@@ -1437,10 +1655,11 @@
         <a href="#what-is">Как это работает</a>
         <a href="#program">Программа</a>
         <a href="#results">Результаты</a>
+        <a href="#testimonials">Отзывы</a>
         <a href="#author">Об авторе</a>
         <a href="#format">Условия</a>
         <a href="#faq">FAQ</a>
-        <a href="#cta">Записаться</a>
+        <a href="#cta">Начать трансформацию</a>
     </div>
 
     <!-- HERO -->
@@ -1460,12 +1679,29 @@
                 <span class="hero__badge-dot"></span>
                 Курс-ретрит · 8 лекций + 15 практик
             </div>
-            <h1 class="hero__title">Нейрофизиология тантры: как древние техники работают на уровне <span class="highlight">вашей нервной системы</span></h1>
-            <p class="hero__subtitle">Курс-ретрит о том, как энергия, визуализации и сексуальные практики перестраивают мозг, снижают стресс и возвращают чувствительность — без мистики и эзотерики.</p>
+            <h1 class="hero__title">Тантра без мистики:<br>Как перестроить мозг для снижения стресса,<br>яркого секса и глубокой чувствительности</h1>
+            <p class="hero__subtitle">8 научных занятий + 15 утренних практик =<br>Трансформация нервной системы за 2 недели</p>
+            <div class="hero-social-proof reveal">
+                <p>✓ Более 1000 выпускников курсов Леонида Кутузова</p>
+                <p>✓ Рейтинг 4.9/5 — 20+ лет практики и исследований</p>
+            </div>
             <p class="hero__intro">Это теоретически-практический курс о том, как работают тантрические техники на уровне нервной системы. Мы соединим древние знания с современной нейронаукой.</p>
             <div class="hero__actions">
-                <a href="#cta" class="btn btn-primary">Записаться на курс</a>
+                <a href="#cta" class="btn btn-primary">Начать трансформацию</a>
                 <a href="#program" class="btn btn-outline">Смотреть программу</a>
+            </div>
+            <p class="cta-subtitle">Старт [дата] — Осталось X мест</p>
+            <div class="urgency-block reveal">
+                <div class="countdown">
+                    <p class="countdown-label">До окончания скидки осталось:</p>
+                    <div class="countdown-timer">
+                        <div class="time-unit"><span id="days" class="time-value">00</span><span class="time-label">дней</span></div>
+                        <div class="time-unit"><span id="hours" class="time-value">00</span><span class="time-label">часов</span></div>
+                        <div class="time-unit"><span id="minutes" class="time-value">00</span><span class="time-label">минут</span></div>
+                        <div class="time-unit"><span id="seconds" class="time-value">00</span><span class="time-label">секунд</span></div>
+                    </div>
+                </div>
+                <div class="spots-left"><p>🔥 Осталось <strong id="spots-number">12</strong> из 30 мест</p></div>
             </div>
             <div class="hero__info-row">
                 <span>📚 8 теоретических занятий</span>
@@ -1536,47 +1772,48 @@
             <div class="for-whom__grid">
                 <div class="for-whom__card reveal">
                     <div class="for-whom__icon">✨</div>
-                    <h3>Уперлись в потолок в медитации</h3>
-                    <p>Практикуете давно, но не хватает глубины, телесной включенности, живого удовольствия от практики.</p>
+                    <h3>Медитация не даёт результата?</h3>
+                    <p>Практикуете годами, но нет прорыва?</p>
                     <ul>
                         <li>Хотите освоить продвинутые техники визуализации и работы с энергией</li>
-                        <li>Ищете логическое продолжение базовых курсов медитации</li>
+                        <li>Ищете логическое продолжение базовых практик</li>
                     </ul>
                 </div>
                 <div class="for-whom__card reveal">
                     <div class="for-whom__icon">😰</div>
-                    <h3>Живете в хроническом стрессе и выгорании</h3>
-                    <p>Тревога, бессонница, состояние «ничего не радует», эмоциональная перегрузка.</p>
+                    <h3>Стресс съедает вас изнутри?</h3>
+                    <p>Тревога, бессонница, выгорание — знакомо?</p>
                     <ul>
-                        <li>Ищете научно обоснованные способы саморегуляции через тело и дыхание</li>
-                        <li>Хотите научиться быстро переключаться из стресса в расслабление</li>
+                        <li>Ищете научно обоснованные способы саморегуляции через тело и дыхание, чтобы наконец-то научиться быстро переключаться из стресса в расслабление</li>
                     </ul>
                 </div>
                 <div class="for-whom__card reveal">
                     <div class="for-whom__icon">💑</div>
-                    <h3>Хотите разобраться с сексуальностью</h3>
-                    <p>Потеря чувствительности, механический секс без близости.</p>
+                    <h3>Секс превратился в рутину?</h3>
+                    <p>Потеряли чувствительность и желание?</p>
                     <ul>
                         <li>Трудности с возбуждением, оргазмом, контактом с партнером</li>
                         <li>Интересуетесь тантрическим сексом, но без шаманских плясок и эзотерики</li>
+                        <li>Хотите вернуть яркость ощущений на научной основе</li>
                     </ul>
                 </div>
                 <div class="for-whom__card reveal">
                     <div class="for-whom__icon">🧠</div>
-                    <h3>Потеряли контакт с телом</h3>
-                    <p>Живете «в голове», плохо чувствуете сигналы тела.</p>
+                    <h3>Живёте только головой?</h3>
+                    <p>Тело как будто не ваше?</p>
                     <ul>
+                        <li>Постоянно в мыслях, плохо чувствуете сигналы тела и эмоции</li>
                         <li>Хотите развить интероцепцию (осознание внутренних ощущений)</li>
                         <li>Ищете способ вернуть яркость переживаний и телесное присутствие</li>
                     </ul>
                 </div>
                 <div class="for-whom__card reveal">
                     <div class="for-whom__icon">👨‍⚕️</div>
-                    <h3>Профессионально работаете с людьми</h3>
-                    <p>Психотерапевты, телесные практики, преподаватели йоги/медитации.</p>
+                    <h3>Преподаватель или психотерапевт?</h3>
+                    <p>Нужны научные инструменты, а не магия?</p>
                     <ul>
-                        <li>Нужны рабочие нейро-модели тантрических практик, а не магическое мышление</li>
-                        <li>Хотите расширить инструментарий научно обоснованными техниками</li>
+                        <li>Психотерапевты, телесные практики, преподаватели йоги/медитации</li>
+                        <li>Хотите расширить профессиональный инструментарий научно обоснованными тантрическими техниками с пониманием нейромеханизмов</li>
                     </ul>
                 </div>
             </div>
@@ -1681,12 +1918,37 @@
                 <p class="section-subtitle">Научно обоснованные изменения на уровне нервной системы, психики и тела</p>
             </div>
             <div class="results__grid">
-                <div class="results__card reveal"><div class="icon">🧠</div><h3>Снижение стресса и тревожности</h3><p>Тренировка областей мозга, отвечающих за саморегуляцию (префронтальная кора), уменьшение реактивности амигдалы, нормализация уровня кортизола через регулярную практику.</p></div>
-                <div class="results__card reveal"><div class="icon">😴</div><h3>Улучшение сна и восстановления</h3><p>Активация парасимпатической НС, баланс гипоталамо-гипофизарно-надпочечниковой оси, способность быстро переключаться из стресса в расслабление.</p></div>
-                <div class="results__card reveal"><div class="icon">🔥</div><h3>Возвращение телесной и эмоциональной чувствительности</h3><p>Развитие интероцепции, расширение спектра удовольствия и чувствительности, выход из состояния «жизни в голове».</p></div>
-                <div class="results__card reveal"><div class="icon">💑</div><h3>Более насыщенная сексуальная жизнь</h3><p>Больше ощущений, меньше тревоги и зажимов, способность оставаться в контакте с партнером, освоение техник энергетического оргазма.</p></div>
-                <div class="results__card reveal"><div class="icon">🧘</div><h3>Продвинутые навыки медитации</h3><p>Освоение визуализации, работы с энергией, трансформации эмоций, недуальных состояний — с глубоким пониманием нейрофизиологических механизмов.</p></div>
-                <div class="results__card reveal"><div class="icon">🛠️</div><h3>Практический инструментарий</h3><p>Набор конкретных техник под разные жизненные задачи: от быстрого засыпания и снятия острого стресса до работы с гневом, страстью и сексуальными блоками.</p></div>
+                <div class="results__card reveal"><div class="icon">🧠</div><h3>Снижение стресса на 40–60%</h3><ul><li>Кортизол падает после 2 недель практики</li><li>Засыпаете за 10–15 минут вместо часа</li><li>Меньше реагируете на триггеры и раздражители</li><li>Тренировка префронтальной коры, уменьшение реактивности амигдалы</li></ul></div>
+                <div class="results__card reveal"><div class="icon">😴</div><h3>Глубокий сон и быстрое восстановление</h3><ul><li>Активация парасимпатической нервной системы</li><li>Баланс ГГН-оси (гипоталамо-гипофизарно-надпочечниковой)</li><li>Быстрое переключение: стресс → расслабление за 5 минут</li><li>Энергия с утра, бодрость в течение дня</li></ul></div>
+                <div class="results__card reveal"><div class="icon">🔥</div><h3>Возвращение телесной чувствительности</h3><ul><li>Развитие интероцепции (ощущение тела изнутри)</li><li>Расширение спектра удовольствия в 3–5 раз</li><li>Выход из состояния «жизни в голове»</li><li>Яркость переживаний, которую вы забыли</li></ul></div>
+                <div class="results__card reveal results__card--highlight"><div class="icon">💑</div><h3>Секс становится в 3–5 раз ярче</h3><ul><li>Возвращается чувствительность тела и эрогенных зон</li><li>Оргазм длится дольше, становится глубже</li><li>Исчезает тревога и зажатость в интимности</li><li>Умение оставаться в контакте с партнёром</li></ul><p class="highlight-badge">🔥 Самый востребованный результат</p></div>
+                <div class="results__card reveal"><div class="icon">🧘</div><h3>Продвинутые навыки медитации</h3><ul><li>Визуализация: удержание сложных образов</li><li>Работа с энергией через нейросистемы</li><li>Трансформация эмоций (гнев → сила)</li><li>Недуальные состояния с пониманием механизмов</li></ul></div>
+                <div class="results__card reveal"><div class="icon">🛠️</div><h3>Практический инструментарий на каждый день</h3><ul><li>Быстро заснуть: техника за 5 минут</li><li>Снять острый стресс: дыхание + визуализация</li><li>Работа с гневом и раздражением</li><li>Проработка сексуальных блоков</li></ul></div>
+            </div>
+            <div class="results-timeline reveal">
+                <h3>Когда ждать результатов?</h3>
+                <div class="timeline-item"><span class="timeline-badge">3–5 дней</span><p>Первые изменения: легче засыпать, меньше тревоги</p></div>
+                <div class="timeline-item"><span class="timeline-badge">2–4 недели</span><p>Устойчивые результаты: возвращается чувствительность</p></div>
+                <div class="timeline-item"><span class="timeline-badge">2–3 месяца</span><p>Глубокая трансформация нервной системы</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="testimonials__title reveal">Что говорят выпускники</h2>
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">«После курса я впервые за 5 лет почувствовала настоящий оргазм. Думала, со мной что-то не так. Оказалось, всё дело в зажатой нервной системе и хроническом стрессе. Леонид объяснил механизмы так просто и научно — никакой эзотерики. Работает!»</p><div class="testimonial-author"><div class="author-avatar">М</div><div class="author-info"><p class="author-name">Мария, 38 лет</p><p class="author-role">Психолог</p></div></div></div>
+                <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">«Медитировал 7 лет, но был потолок. Этот курс перевернул всё. Визуализации, работа с энергией через каналы — теперь понимаю, ЧТО именно делаю с мозгом. Плюс ушла хроническая тревога, которая мешала жить. За 2 недели!»</p><div class="testimonial-author"><div class="author-avatar">А</div><div class="author-info"><p class="author-name">Алексей, 42 года</p><p class="author-role">IT-специалист</p></div></div></div>
+                <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">«Я преподаю йогу 10 лет. Этот курс дал мне инструменты, которых не хватало — научное объяснение тантрических практик. Теперь я могу объяснять ученикам не «почувствуй энергию», а что именно происходит в теле. Авторитет вырос в разы.»</p><div class="testimonial-author"><div class="author-avatar">Е</div><div class="author-info"><p class="author-name">Екатерина, 35 лет</p><p class="author-role">Преподаватель йоги</p></div></div></div>
+                <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">«Секс с мужем был механическим уже года 3. После курса всё изменилось. Я научилась чувствовать тело по-новому. Оргазмы стали намного глубже, появилась близость, которой не было. Муж в шоке от перемен :)»</p><div class="testimonial-author"><div class="author-avatar">О</div><div class="author-info"><p class="author-name">Ольга, 31 год</p><p class="author-role">Маркетолог</p></div></div></div>
+            </div>
+            <div class="testimonials-stats reveal">
+                <div class="stat-item"><span class="stat-number">87%</span><p>Отмечают снижение тревоги</p></div>
+                <div class="stat-item"><span class="stat-number">92%</span><p>Улучшение качества сна</p></div>
+                <div class="stat-item"><span class="stat-number">78%</span><p>Прорыв в сексуальной сфере</p></div>
+                <div class="stat-item"><span class="stat-number">95%</span><p>Рекомендуют курс друзьям</p></div>
             </div>
         </div>
     </section>
@@ -1849,6 +2111,22 @@
         </div>
     </section>
 
+    <!-- BLOCK: OBJECTIONS (работа с возражениями) -->
+    <section class="objections" id="objections">
+        <div class="container">
+            <h2 class="objections__title reveal">Сомневаетесь?</h2>
+            <p class="objections__subtitle reveal">Давайте разберём типичные опасения</p>
+            <div class="objections-grid reveal">
+                <div class="objection-card"><h3>❓ «Я не готов работать с сексуальностью»</h3><p class="objection-answer">→ Все практики адаптированы для сольной работы. Партнер не нужен. Сексуальный блок — только 25% курса. Остальное: дыхание, визуализации, трансформация эмоций, работа со стрессом.</p></div>
+                <div class="objection-card"><h3>❓ «Я новичок в медитации»</h3><p class="objection-answer">→ Если у вас есть 3–6 месяцев опыта регулярной практики — этого достаточно. Если нет — рекомендуем начать с курса «Эксперт медитации» для освоения базовых навыков концентрации.</p></div>
+                <div class="objection-card"><h3>❓ «Дорого для меня»</h3><p class="objection-answer">→ Рассрочка на 3 платежа без переплат. Это инвестиция в здоровье нервной системы, которая окупится снижением стресса, улучшением сна и качества жизни на годы вперёд.</p></div>
+                <div class="objection-card"><h3>❓ «Нет времени на ежедневные практики»</h3><p class="objection-answer">→ 45 минут утром. Все эфиры записываются — можно практиковать в удобное время. Для максимального эффекта лучше присоединяться к живым практикам: групповая работа усиливает результат.</p></div>
+                <div class="objection-card"><h3>❓ «Это очередная эзотерика?»</h3><p class="objection-answer">→ Нет. Это научный подход к древним практикам. Каждая техника объясняется через нейрофизиологию. Есть список исследований и источников. Леонид — биолог с образованием МГУ и Stanford, а не «гуру».</p></div>
+                <div class="objection-card"><h3>❓ «А если не поможет?»</h3><p class="objection-answer">→ Первые изменения — через 3–5 дней практики (легче засыпать, меньше тревоги). Если после 2 недель вы не видите результатов — пишите, разберёмся индивидуально. Возможен возврат в течение 7 дней.</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- BLOCK 9: FAQ -->
     <section class="faq" id="faq">
         <div class="container">
@@ -1993,7 +2271,7 @@
     </footer>
 
     <!-- STICKY CTA -->
-    <a href="#cta" class="sticky-cta" id="stickyCta">Записаться на курс</a>
+    <a href="#cta" class="sticky-cta" id="stickyCta">Начать трансформацию</a>
 
     <script>
         // Nav scroll
@@ -2067,6 +2345,33 @@
                 }
             });
         }
+
+        // Countdown до окончания скидки (7 дней от текущей даты)
+        const countdownDate = new Date();
+        countdownDate.setDate(countdownDate.getDate() + 7);
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            if (!daysEl) return;
+            if (distance < 0) {
+                document.querySelector('.countdown').innerHTML = '<p class="countdown-label">Акция завершена</p>';
+                return;
+            }
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            daysEl.textContent = String(days).padStart(2, '0');
+            hoursEl.textContent = String(hours).padStart(2, '0');
+            minutesEl.textContent = String(minutes).padStart(2, '0');
+            secondsEl.textContent = String(seconds).padStart(2, '0');
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
     </script>
 </body>
 </html>
