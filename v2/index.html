@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Нейрофизиология тантры — курс-ретрит (v2) | Тантра без эзотерики</title>
+    <meta name="description" content="Курс-ретрит: как древние тантрические техники работают на уровне нервной системы. 8 лекций + 15 практик. Без мистики — с научным объяснением.">
+    <meta property="og:title" content="Нейрофизиология тантры — энергия, чакры, мозг и трансформация">
+    <meta property="og:description" content="Единственный курс, соединяющий тантрические техники с современной нейронаукой. Снижение стресса, чувствительность тела, сексуальность.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236B2D2D'/%3E%3Cstop offset='100%25' style='stop-color:%23ffd700'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Cpath d='M16 8v6l4 2' fill='none' stroke='url(%23g)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236B2D2D'/%3E%3Cstop offset='100%25' style='stop-color:%23ffd700'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='36' fill='%230f0a0b'/%3E%3Ccircle cx='90' cy='90' r='70' fill='none' stroke='url(%23g)' stroke-width='6'/%3E%3Cpath d='M90 50v48l24 12' fill='none' stroke='url(%23g)' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d1518;
+            --primary-deep: #1a0a0c;
+            --violet: #5c2a2a;
+            --violet-light: #8b4545;
+            --burgundy: #6B2D2D;
+            --gold: #e6b84c;
+            --gold-light: #ffd700;
+            --copper: #c4902f;
+            --neuro-cyan: #06b6d4;
+            --neuro-teal: #0d9488;
+            --bg-dark: #0f0a0b;
+            --bg-card: #1a1214;
+            --bg-light: #22181a;
+            --bg-section: #120c0e;
+            --text: #e8eaf0;
+            --text-muted: #9ca3b8;
+            --accent: var(--gold);
+            --success: #22c55e;
+            --danger: #ef4444;
+            --font-head: 'Cormorant Garamond', Georgia, serif;
+            --font-nav: 'Raleway', -apple-system, sans-serif;
+            --font-body: 'Open Sans', -apple-system, sans-serif;
+            --ease: cubic-bezier(0.4, 0, 0.2, 1);
+            --radius: 16px;
+            --radius-lg: 24px;
+            --glass: rgba(26, 18, 20, 0.75);
+            --glass-border: rgba(212, 175, 55, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: rgba(212, 175, 55, 0.15);
+        }
+        @media (max-width: 768px) {
+            body { padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+        }
+        a { text-decoration: none; color: inherit; }
+        .author__bio a, .suits__col a, .accordion__body-inner a, .program__intro a, .faq .accordion__body-inner a, .footer__tagline a, .cta-section__bonus a, .author__club-note a {
+            color: var(--gold);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+            transition: color 0.25s, border-color 0.25s;
+        }
+        .author__bio a:hover, .suits__col a:hover, .accordion__body-inner a:hover, .program__intro a:hover, .faq .accordion__body-inner a:hover, .footer__tagline a:hover, .cta-section__bonus a:hover, .author__club-note a:hover {
+            color: var(--gold-light);
+            border-color: var(--gold);
+        }
+        img { max-width: 100%; display: block; }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-nav);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+        .section-tag::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+            border-radius: 2px;
+        }
+        .section-title {
+            font-family: var(--font-head);
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .section-subtitle {
+            font-size: 17px;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 20px; }
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            font-family: var(--font-nav);
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.35s var(--ease);
+            min-height: 48px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
+            color: var(--bg-dark);
+            box-shadow: 0 8px 28px rgba(255, 215, 0, 0.4), 0 0 0 1px rgba(255,255,255,0.1) inset;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 36px rgba(255, 215, 0, 0.5), 0 0 0 1px rgba(255,255,255,0.15) inset;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+        }
+        .btn-outline:hover {
+            background: rgba(212, 175, 55, 0.15);
+        }
+
+        /* ===== NAV ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s var(--ease);
+        }
+        .nav.scrolled {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 14px 40px;
+        }
+        .nav__logo {
+            font-family: var(--font-head);
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--text);
+        }
+        .nav__logo span { color: var(--gold); }
+        .nav__links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav__links a {
+            font-family: var(--font-nav);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+        .nav__links a:hover { color: var(--gold); }
+        .nav__cta {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
+            color: var(--bg-dark);
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(255, 215, 0, 0.3);
+        }
+        .nav__cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4); }
+        .nav__burger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 12px;
+            min-width: 48px;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .nav__burger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text);
+            transition: all 0.3s;
+        }
+        .nav__mobile {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: var(--bg-dark);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s;
+        }
+        .nav__mobile.active { opacity: 1; pointer-events: all; }
+        .nav__mobile a {
+            font-family: var(--font-head);
+            font-size: 26px;
+            color: var(--text);
+            padding: 14px 24px;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        @media (max-width: 900px) {
+            .nav__links, .nav__cta { display: none; }
+            .nav__burger { display: flex; }
+            .nav__mobile { display: flex; }
+        }
+        @media (max-width: 768px) {
+            .nav { padding: 14px 20px; }
+            .nav.scrolled { padding: 12px 20px; }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero__bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary-deep) 0%, var(--violet) 50%, var(--primary) 100%);
+        }
+        .hero__bg-img {
+            position: absolute;
+            inset: 0;
+            background-image: url(https://picsum.photos/seed/hero-bg/1920/1080);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.35;
+        }
+        .hero__bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(105deg, var(--primary-deep) 0%, transparent 45%, rgba(92,42,42,0.5) 100%);
+        }
+        .hero__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L30 60M0 30L60 30' stroke='rgba(212,175,55,0.03)' stroke-width='0.5'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .hero__visual {
+            position: absolute;
+            right: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 42%;
+            max-width: 480px;
+            height: 65%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 24px 48px rgba(0,0,0,0.4);
+        }
+        .hero__visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero__content {
+            position: relative;
+            z-index: 10;
+            padding: 0 60px;
+            max-width: 720px;
+        }
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+        .hero__badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .hero__title {
+            font-family: var(--font-head);
+            font-size: clamp(36px, 5.5vw, 52px);
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        .hero__title .highlight { color: var(--gold); font-style: italic; }
+        .hero__subtitle {
+            font-size: 18px;
+            line-height: 1.75;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            max-width: 580px;
+        }
+        .hero__intro {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+        .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
+        .hero__info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 32px;
+            margin-top: 32px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .hero__info-row span { display: flex; align-items: center; gap: 8px; }
+        .hero__scroll {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+        @media (max-width: 900px) {
+            .hero__visual { width: 38%; max-width: 320px; right: 3%; }
+        }
+        @media (max-width: 768px) {
+            .hero { min-height: 100vh; min-height: 100dvh; padding-top: env(safe-area-inset-top, 0); }
+            .hero__content { padding: 0 24px; padding-top: 20px; }
+            .hero__visual { display: none; }
+            .hero__bg-img { opacity: 0.25; }
+            .hero__scroll { bottom: max(24px, env(safe-area-inset-bottom, 24px)); }
+        }
+        @media (max-width: 480px) {
+            .hero__title { font-size: clamp(28px, 8vw, 36px); }
+            .hero__subtitle { font-size: 16px; }
+        }
+
+        /* ===== STATS BAR (как на neuro-universe) ===== */
+        .stats-bar {
+            padding: 28px 24px;
+            background: linear-gradient(135deg, rgba(92, 42, 42, 0.4) 0%, rgba(45, 21, 24, 0.5) 50%, rgba(6, 182, 212, 0.08) 100%);
+            border-bottom: 2px solid rgba(6, 182, 212, 0.2);
+        }
+        .stats-bar__inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 32px 48px;
+        }
+        .stats-bar__item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .stats-bar__num {
+            font-family: var(--font-head);
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .stats-bar__label {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .science-badge {
+            text-align: center;
+            padding: 20px 24px;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.12) 0%, rgba(92, 42, 42, 0.2) 50%, rgba(212, 175, 55, 0.12) 100%);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .science-badge__text {
+            font-family: var(--font-nav);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--gold-light);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== NEURO VISUAL STRIP (мозг + наука) ===== */
+        .neuro-strip {
+            padding: 60px 0;
+            background: linear-gradient(180deg, var(--bg-section) 0%, rgba(6, 182, 212, 0.06) 50%, var(--bg-section) 100%);
+        }
+        .neuro-strip__title {
+            text-align: center;
+            font-family: var(--font-head);
+            font-size: clamp(24px, 3.5vw, 32px);
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 28px;
+        }
+        .neuro-strip__title span { color: var(--neuro-cyan); }
+        .neuro-strip__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .neuro-strip__item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            aspect-ratio: 4/3;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+            transition: all 0.4s var(--ease);
+        }
+        .neuro-strip__item:hover {
+            border-color: rgba(6, 182, 212, 0.45);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 48px rgba(0,0,0,0.35), 0 0 30px rgba(6, 182, 212, 0.1);
+        }
+        .neuro-strip__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .neuro-strip__grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+        }
+
+        /* ===== BLOCK: FOR WHOM (5 cards) ===== */
+        .for-whom {
+            padding: 100px 0;
+            background: var(--bg-section);
+        }
+        .for-whom__banner {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 48px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+        }
+        .for-whom__banner img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .for-whom__banner img { height: 200px; }
+        }
+        .for-whom__header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 56px;
+        }
+        .for-whom__prereq {
+            margin-top: 16px;
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .for-whom__prereq a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
+        .for-whom__prereq a:hover { color: var(--gold-light); }
+        .prep-courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+        .prep-courses__card {
+            display: block;
+            padding: 24px;
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(92, 42, 42, 0.2) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            transition: all 0.35s var(--ease);
+            color: var(--text);
+        }
+        .prep-courses__card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .prep-courses__tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        .prep-courses__card h3 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .prep-courses__card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        .prep-courses__link {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gold);
+            transition: color 0.25s;
+        }
+        .prep-courses__card:hover .prep-courses__link { color: var(--gold-light); }
+        .for-whom__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+            gap: 24px;
+        }
+        .for-whom__card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(92, 42, 42, 0.2) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 32px;
+            transition: all 0.35s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+        .for-whom__card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--gold), var(--violet-light));
+            opacity: 0.6;
+        }
+        .for-whom__card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 24px 48px rgba(0,0,0,0.35), 0 0 40px rgba(212, 175, 55, 0.08);
+        }
+        .for-whom__icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .for-whom__card h3 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+        .for-whom__card p, .for-whom__card ul {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .for-whom__card ul { margin-top: 12px; padding-left: 20px; }
+        .for-whom__card li { margin-bottom: 6px; }
+
+        /* ===== BLOCK: WHAT IS (Tantra without esoterics) ===== */
+        .what-is {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(92, 42, 42, 0.12) 50%, var(--bg-dark) 100%);
+        }
+        .what-is__grid {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .what-is__img {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+        }
+        .what-is__img img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+        .what-is__text p {
+            font-size: 17px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .what-is__text-table { display: flex; flex-direction: column; gap: 32px; }
+        @media (max-width: 900px) {
+            .what-is__grid { grid-template-columns: 1fr; }
+            .what-is__img { max-width: 400px; margin: 0 auto; }
+            .what-is__img img { height: 280px; }
+        }
+
+        /* ===== BLOCK: PROGRAM (accordion + practical) ===== */
+        .program {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-section) 0%, rgba(212, 175, 55, 0.04) 50%, var(--bg-section) 100%);
+        }
+        .program__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 24px;
+        }
+        .program__intro {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 48px;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .program__visual {
+            max-width: 900px;
+            margin: 0 auto 48px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 48px rgba(0,0,0,0.35);
+        }
+        .program__visual img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .program__visual img { height: 220px; }
+        }
+        .program__theory {
+            margin-bottom: 56px;
+        }
+        .program__theory h3 {
+            font-family: var(--font-head);
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: var(--gold);
+        }
+        .accordion__item {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .accordion__head {
+            width: 100%;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-family: var(--font-nav);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+            min-height: 56px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .accordion__head:hover { background: rgba(212, 175, 55, 0.06); }
+        @media (max-width: 480px) {
+            .accordion__head { padding: 16px 18px; font-size: 15px; line-height: 1.4; }
+            .accordion__body-inner { padding: 0 18px 20px; }
+        }
+        .accordion__head .num {
+            color: var(--gold);
+            margin-right: 12px;
+            font-weight: 600;
+        }
+        .accordion__icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+        .accordion__item.active .accordion__icon { transform: rotate(45deg); }
+        .accordion__body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s var(--ease);
+        }
+        .accordion__body-inner {
+            padding: 0 24px 24px;
+        }
+        .accordion__body-inner p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.75;
+        }
+        .accordion__body-inner p + p { margin-top: 12px; }
+        .program__practice {
+            background: linear-gradient(135deg, rgba(92, 42, 42, 0.3) 0%, rgba(45, 21, 24, 0.3) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+        }
+        .program__practice h3 {
+            font-family: var(--font-head);
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        .program__practice ul {
+            list-style: none;
+        }
+        .program__practice li {
+            padding: 10px 0;
+            padding-left: 28px;
+            position: relative;
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+        .program__practice li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* ===== GALLERY STRIP ===== */
+        .gallery-strip {
+            padding: 0 0 80px;
+            background: var(--bg-section);
+        }
+        .gallery-strip__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .gallery-strip__item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+            aspect-ratio: 4/3;
+        }
+        .gallery-strip__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s var(--ease);
+        }
+        .gallery-strip__item:hover img { transform: scale(1.08); }
+        @media (max-width: 768px) {
+            .gallery-strip { padding: 0 0 56px; }
+            .gallery-strip__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 20px; }
+        }
+
+        /* ===== BLOCK: RESULTS (6 cards) ===== */
+        .results {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(92, 42, 42, 0.1) 50%, var(--bg-dark) 100%);
+        }
+        .results__header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 56px;
+        }
+        .results__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 24px;
+        }
+        .results__card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(92, 42, 42, 0.25) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 32px;
+            transition: all 0.35s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+        .results__card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--gold), var(--violet-light));
+            opacity: 0.7;
+        }
+        .results__card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 44px rgba(0,0,0,0.35), 0 0 36px rgba(212, 175, 55, 0.08);
+        }
+        .results__card .icon { font-size: 32px; margin-bottom: 16px; }
+        .results__card h3 {
+            font-family: var(--font-head);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .results__card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ===== BLOCK: SUITS / NOT SUITS (2 columns) ===== */
+        .suits {
+            padding: 100px 0;
+            background: var(--bg-section);
+        }
+        .suits__header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .suits__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .suits__col {
+            border-radius: var(--radius);
+            padding: 32px;
+            border: 2px solid;
+        }
+        .suits__col--yes {
+            background: rgba(34, 197, 94, 0.08);
+            border-color: rgba(34, 197, 94, 0.4);
+        }
+        .suits__col--no {
+            background: rgba(239, 68, 68, 0.06);
+            border-color: rgba(239, 68, 68, 0.35);
+        }
+        .suits__col h3 {
+            font-family: var(--font-head);
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .suits__col--yes h3 { color: var(--success); }
+        .suits__col--no h3 { color: var(--danger); }
+        .suits__col ul {
+            list-style: none;
+        }
+        .suits__col li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .suits__col--yes li { color: var(--text); }
+        .suits__col--no li { color: var(--text-muted); }
+        .suits__col li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .suits__col--yes li::before { color: var(--success); }
+        .suits__col--no li::before { content: '✕'; color: var(--danger); }
+        @media (max-width: 768px) {
+            .suits__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== BLOCK: AUTHOR ===== */
+        .author {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(92, 42, 42, 0.15) 50%, var(--bg-dark) 100%);
+        }
+        .author__grid {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .author__photo-wrap {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+        }
+        .author__photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .author__extra-img {
+            margin-top: 20px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            max-width: 280px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+        }
+        .author__extra-img img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .author__name {
+            font-family: var(--font-head);
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .author__role {
+            font-size: 15px;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+        .author__bio p, .author__quote p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .author__quote {
+            margin: 32px 0;
+            padding: 28px;
+            background: var(--bg-card);
+            border-left: 4px solid var(--gold);
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+        .author__quote p { margin-bottom: 0; font-style: italic; }
+        .author__stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 28px;
+        }
+        .author__stat {
+            padding: 14px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .author__stat strong { display: block; color: var(--gold); margin-bottom: 4px; }
+        .author__stat a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
+        .author__stat a:hover { color: var(--gold-light); }
+        .author__club-note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .author__club-note a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.4); }
+        .author__club-note a:hover { color: var(--gold-light); }
+        @media (max-width: 900px) {
+            .author__grid { grid-template-columns: 1fr; }
+            .author__photo-wrap { max-width: 320px; }
+        }
+
+        /* ===== BLOCK: FORMAT & PRICE (3 columns) ===== */
+        .format {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-section) 0%, rgba(212, 175, 55, 0.05) 50%, var(--bg-section) 100%);
+        }
+        .format__header { text-align: center; margin-bottom: 48px; }
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 56px;
+        }
+        .how-it-works__item {
+            text-align: center;
+            padding: 24px 16px;
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.08) 0%, rgba(92, 42, 42, 0.12) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--radius);
+            transition: all 0.35s var(--ease);
+        }
+        .how-it-works__item:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.12);
+        }
+        .how-it-works__icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 16px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--violet-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        .how-it-works__item strong { display: block; font-family: var(--font-nav); font-size: 14px; color: var(--text); margin-bottom: 6px; }
+        .how-it-works__item span { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+        @media (max-width: 900px) { .how-it-works { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .how-it-works { grid-template-columns: 1fr; } }
+        .format__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+        .format__card {
+            background: linear-gradient(165deg, var(--bg-card) 0%, rgba(92, 42, 42, 0.12) 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 32px;
+            transition: all 0.35s var(--ease);
+        }
+        .format__card:hover {
+            border-color: rgba(212, 175, 55, 0.35);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.3), 0 0 30px rgba(212, 175, 55, 0.06);
+        }
+        .format__card .icon {
+            font-size: 38px;
+            margin-bottom: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(92, 42, 42, 0.25) 100%);
+            border-radius: 50%;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .format__card h3 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .format__card ul { list-style: none; }
+        .format__card li {
+            padding: 8px 0;
+            padding-left: 22px;
+            position: relative;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .format__card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+        .format__price-wrap {
+            text-align: center;
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(92, 42, 42, 0.35) 0%, rgba(45, 21, 24, 0.3) 50%, rgba(212, 175, 55, 0.12) 100%);
+            border: 2px solid rgba(212, 175, 55, 0.35);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.08);
+        }
+        .format__price-wrap p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .format__price-wrap .price {
+            font-family: var(--font-head);
+            font-size: 42px;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        .format__price-wrap .price del {
+            font-size: 28px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 12px;
+        }
+        .cta-section__bonus del {
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 6px;
+        }
+        @media (max-width: 480px) {
+            .format__price-wrap .price { font-size: 32px; line-height: 1.3; }
+            .format__price-wrap .price del { font-size: 20px; margin-right: 8px; }
+        }
+        .format__price-wrap .cta { margin-top: 24px; }
+        @media (max-width: 900px) {
+            .format__grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            padding: 100px 0;
+            background: var(--bg-dark);
+        }
+        .faq__inner { max-width: 800px; margin: 0 auto; }
+        .faq__header { text-align: center; margin-bottom: 48px; }
+        .faq .accordion__item { margin-bottom: 8px; }
+        .faq .accordion__body-inner p { padding-bottom: 8px; }
+
+        /* ===== CTA SECTION + FORM ===== */
+        .cta-section {
+            position: relative;
+            padding: 100px 24px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .cta-section__bg {
+            position: absolute;
+            inset: 0;
+            background-image: url(https://picsum.photos/seed/hero-bg/1920/1080);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+        }
+        .cta-section__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--violet) 100%);
+        }
+        .cta-section .container { position: relative; z-index: 1; }
+        .cta-section__title {
+            font-family: var(--font-head);
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        .cta-section__text {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-section__bonus {
+            font-size: 15px;
+            color: var(--gold);
+            margin-bottom: 40px;
+        }
+        @media (max-width: 480px) {
+            .cta-section__bonus { font-size: 14px; line-height: 1.6; }
+        }
+        .form-reg {
+            max-width: 440px;
+            margin: 0 auto 32px;
+            text-align: left;
+        }
+        .form-reg input {
+            width: 100%;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: var(--font-body);
+        }
+        @media (max-width: 768px) {
+            .form-reg input { min-height: 52px; font-size: 16px; }
+            .form-reg .btn { min-height: 52px; }
+        }
+        .form-reg input::placeholder { color: var(--text-muted); }
+        .form-reg input:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        .form-reg .checkbox-wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .form-reg .checkbox-wrap input { width: auto; margin: 4px 0 0; }
+        .form-reg .checkbox-wrap label {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .form-reg .btn { width: 100%; padding: 18px; }
+        .form-success {
+            display: none;
+            padding: 24px;
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid var(--success);
+            border-radius: var(--radius);
+            color: var(--success);
+            margin-bottom: 24px;
+        }
+        .form-reg.sent .form-fields { display: none; }
+        .form-reg.sent .form-success { display: block; }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 60px 24px 32px;
+            padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+            background: var(--bg-card);
+            border-top: 1px solid var(--glass-border);
+        }
+        .footer__top {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+        .footer__logo {
+            font-family: var(--font-head);
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+        .footer__logo span { color: var(--gold); }
+        .footer__tagline {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .footer__col h4 {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        .footer__col ul { list-style: none; }
+        .footer__col li { margin-bottom: 10px; }
+        .footer__col a, .footer__col span {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom {
+            padding-top: 24px;
+            border-top: 1px solid var(--glass-border);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+        .footer__bottom a { color: var(--gold); }
+        .footer__bottom a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .footer__top { grid-template-columns: 1fr; }
+        }
+
+        /* ===== STICKY CTA ===== */
+        .sticky-cta {
+            position: fixed;
+            bottom: max(24px, env(safe-area-inset-bottom, 24px));
+            right: max(24px, env(safe-area-inset-right, 24px));
+            z-index: 900;
+            padding: 16px 28px;
+            min-height: 52px;
+            min-width: 52px;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--copper) 100%);
+            color: var(--bg-dark);
+            font-family: var(--font-nav);
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4);
+            transition: all 0.35s var(--ease);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .sticky-cta.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .sticky-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5);
+        }
+
+        /* ===== REVEAL ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .sticky-cta { transition: opacity 0.2s; }
+            .hero__scroll { animation: none; }
+        }
+
+        /* ===== MOBILE: section padding & dividers ===== */
+        @media (max-width: 768px) {
+            .for-whom, .what-is, .program, .results, .author, .format, .faq, .suits { padding-top: 56px; padding-bottom: 56px; }
+            .stats-bar { padding: 20px 20px; }
+            .stats-bar__inner { gap: 20px 32px; }
+            .stats-bar__num { font-size: 28px; }
+        }
+        @media (max-width: 480px) {
+            .for-whom, .what-is, .program, .results, .author, .format, .faq, .suits { padding-top: 48px; padding-bottom: 48px; }
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+            margin: 0;
+            border: none;
+        }
+        .section-divider--gold {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+        }
+
+        /* ===== HERO MOBILE VISUAL (только на мобильных) ===== */
+        .hero__mobile-visual {
+            display: none;
+            margin: 0 -24px 28px;
+            border-radius: 0;
+            width: calc(100% + 48px);
+            margin-left: -24px;
+            margin-right: -24px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+            aspect-ratio: 16/10;
+        }
+        @media (max-width: 480px) {
+            .hero__mobile-visual { width: calc(100% + 40px); margin-left: -20px; margin-right: -20px; }
+        }
+        .hero__mobile-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero__mobile-visual { display: block; }
+        }
+        @media (min-width: 769px) {
+            .hero__mobile-visual { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav__logo">Нейро<span>тантра</span></a>
+        <ul class="nav__links">
+            <li><a href="#for-whom">Для кого</a></li>
+            <li><a href="#what-is">Как это работает</a></li>
+            <li><a href="#program">Программа</a></li>
+            <li><a href="#results">Результаты</a></li>
+            <li><a href="#author">Об авторе</a></li>
+            <li><a href="#format">Условия</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#cta" class="nav__cta">Записаться на курс</a>
+        <div class="nav__burger" id="navBurger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+    <div class="nav__mobile" id="navMobile">
+        <a href="#for-whom">Для кого</a>
+        <a href="#what-is">Как это работает</a>
+        <a href="#program">Программа</a>
+        <a href="#results">Результаты</a>
+        <a href="#author">Об авторе</a>
+        <a href="#format">Условия</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta">Записаться</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__bg-img" aria-hidden="true"></div>
+            <div class="hero__bg-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+            <img src="https://picsum.photos/seed/meditation/800/600" alt="Практика медитации на рассвете">
+        </div>
+        <div class="hero__content">
+            <div class="hero__mobile-visual" aria-hidden="true">
+                <img src="https://picsum.photos/seed/meditation/800/500" alt="">
+            </div>
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                Курс-ретрит · 8 лекций + 15 практик
+            </div>
+            <h1 class="hero__title">Нейрофизиология тантры: как древние техники работают на уровне <span class="highlight">вашей нервной системы</span></h1>
+            <p class="hero__subtitle">Курс-ретрит о том, как энергия, визуализации и сексуальные практики перестраивают мозг, снижают стресс и возвращают чувствительность — без мистики и эзотерики.</p>
+            <p class="hero__intro">Это теоретически-практический курс о том, как работают тантрические техники на уровне нервной системы. Мы соединим древние знания с современной нейронаукой.</p>
+            <div class="hero__actions">
+                <a href="#cta" class="btn btn-primary">Записаться на курс</a>
+                <a href="#program" class="btn btn-outline">Смотреть программу</a>
+            </div>
+            <div class="hero__info-row">
+                <span>📚 8 теоретических занятий</span>
+                <span>🧘 15 практических сессий</span>
+                <span>⏱️ 2 недели трансформации</span>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Листай вниз</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stats-bar__inner">
+            <div class="stats-bar__item"><span class="stats-bar__num">8</span><span class="stats-bar__label">теоретических занятий</span></div>
+            <div class="stats-bar__item"><span class="stats-bar__num">15</span><span class="stats-bar__label">практических сессий</span></div>
+            <div class="stats-bar__item"><span class="stats-bar__num">2</span><span class="stats-bar__label">недели трансформации</span></div>
+            <div class="stats-bar__item"><span class="stats-bar__num">6 мес</span><span class="stats-bar__label">доступ к записям</span></div>
+        </div>
+    </div>
+    <div class="science-badge">
+        <p class="science-badge__text">Научный подход к тантре без эзотерики</p>
+    </div>
+
+    <!-- NEURO STRIP: мозг и нейронаука -->
+    <section class="neuro-strip" aria-label="Нейронаука и мозг">
+        <h2 class="neuro-strip__title reveal">Наука о мозге и теле: <span>нейрофизиология практик</span></h2>
+        <div class="neuro-strip__grid">
+            <div class="neuro-strip__item reveal">
+                <img src="https://picsum.photos/seed/brain1/600/400" alt="Мозг и нейронаука — основа курса" loading="lazy">
+            </div>
+            <div class="neuro-strip__item reveal">
+                <img src="https://picsum.photos/seed/neuro2/600/400" alt="Нервная система и исследования мозга" loading="lazy">
+            </div>
+            <div class="neuro-strip__item reveal">
+                <img src="https://picsum.photos/seed/mind3/600/400" alt="Нейросети и нейропластичность" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider section-divider--gold" aria-hidden="true">
+
+    <!-- BLOCK 2: FOR WHOM -->
+    <section class="for-whom" id="for-whom">
+        <div class="container">
+            <div class="for-whom__banner reveal">
+                <img src="https://picsum.photos/seed/calm/1200/600" alt="Медитация и осознанность — тематика курса" loading="lazy">
+            </div>
+            <div class="for-whom__header reveal">
+                <span class="section-tag">Аудитория</span>
+                <h2 class="section-title">Этот курс для вас, если вы:</h2>
+                <p class="for-whom__prereq">Новичок в медитации? Оба курса отлично подходят для подготовки к «Нейрофизиологии тантры». <strong>Продолжение следует…</strong></p>
+            <div class="prep-courses reveal">
+                <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener" class="prep-courses__card">
+                    <span class="prep-courses__tag">Подготовка</span>
+                    <h3>Эксперт медитации</h3>
+                    <p>Сертификационный инструкторский курс: 110 часов теории и практики, анатомия и нейрофизиология медитации, школы и традиции. Научный подход без эзотерики.</p>
+                    <span class="prep-courses__link">neuro-universe.ru/meditation →</span>
+                </a>
+                <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener" class="prep-courses__card">
+                    <span class="prep-courses__tag">Подготовка</span>
+                    <h3>Избавление от ядов ума</h3>
+                    <p>Нейрофизиология сознания: медитация и коррекция когнитивных искажений. Эмоции, внимание, привычки — от теории к устойчивым изменениям мышления и поведения.</p>
+                    <span class="prep-courses__link">neuro-universe.ru/neurophys →</span>
+                </a>
+            </div>
+            </div>
+            <div class="for-whom__grid">
+                <div class="for-whom__card reveal">
+                    <div class="for-whom__icon">✨</div>
+                    <h3>Уперлись в потолок в медитации</h3>
+                    <p>Практикуете давно, но не хватает глубины, телесной включенности, живого удовольствия от практики.</p>
+                    <ul>
+                        <li>Хотите освоить продвинутые техники визуализации и работы с энергией</li>
+                        <li>Ищете логическое продолжение базовых курсов медитации</li>
+                    </ul>
+                </div>
+                <div class="for-whom__card reveal">
+                    <div class="for-whom__icon">😰</div>
+                    <h3>Живете в хроническом стрессе и выгорании</h3>
+                    <p>Тревога, бессонница, состояние «ничего не радует», эмоциональная перегрузка.</p>
+                    <ul>
+                        <li>Ищете научно обоснованные способы саморегуляции через тело и дыхание</li>
+                        <li>Хотите научиться быстро переключаться из стресса в расслабление</li>
+                    </ul>
+                </div>
+                <div class="for-whom__card reveal">
+                    <div class="for-whom__icon">💑</div>
+                    <h3>Хотите разобраться с сексуальностью</h3>
+                    <p>Потеря чувствительности, механический секс без близости.</p>
+                    <ul>
+                        <li>Трудности с возбуждением, оргазмом, контактом с партнером</li>
+                        <li>Интересуетесь тантрическим сексом, но без шаманских плясок и эзотерики</li>
+                    </ul>
+                </div>
+                <div class="for-whom__card reveal">
+                    <div class="for-whom__icon">🧠</div>
+                    <h3>Потеряли контакт с телом</h3>
+                    <p>Живете «в голове», плохо чувствуете сигналы тела.</p>
+                    <ul>
+                        <li>Хотите развить интероцепцию (осознание внутренних ощущений)</li>
+                        <li>Ищете способ вернуть яркость переживаний и телесное присутствие</li>
+                    </ul>
+                </div>
+                <div class="for-whom__card reveal">
+                    <div class="for-whom__icon">👨‍⚕️</div>
+                    <h3>Профессионально работаете с людьми</h3>
+                    <p>Психотерапевты, телесные практики, преподаватели йоги/медитации.</p>
+                    <ul>
+                        <li>Нужны рабочие нейро-модели тантрических практик, а не магическое мышление</li>
+                        <li>Хотите расширить инструментарий научно обоснованными техниками</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 3: WHAT IS (Tantra without esoterics) -->
+    <section class="what-is" id="what-is">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-tag">Подход</span>
+                <h2 class="section-title">Тантра без эзотерики: как это работает</h2>
+            </div>
+            <div class="what-is__grid">
+                <div class="what-is__img reveal">
+                    <img src="https://picsum.photos/seed/science/800/500" alt="Нейронаука и мозг — основа курса" loading="lazy">
+                </div>
+                <div class="what-is__text-table">
+                <div class="what-is__text reveal">
+                    <p>Это курс о том, как древние тантрические техники работают на языке современной нейронауки. Мы не говорим о чакрах и карме — мы говорим о нервной системе, гормонах, внимании, телесной чувствительности и том, как именно практики перестраивают мозг.</p>
+                    <p>Вы научитесь управлять своими состояниями через дыхание, фокус внимания, визуализацию и телесные/сексуальные практики так, чтобы снижать уровень стресса, расширять спектр удовольствия и тонко чувствовать тело — без ухода в мистику.</p>
+                    <p>Тантра в этом курсе — это не про «магический секс», а про нейрофизиологию удовольствия и близости: как работают системы дофамина, окситоцина и эндорфинов, почему тело «выключается» во время стресса и как мягко вернуть чувствительность и желание.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 4: PROGRAM -->
+    <section class="program" id="program">
+        <div class="container">
+            <div class="program__header reveal">
+                <span class="section-tag">Программа</span>
+                <h2 class="section-title">8 теоретических занятий + 15 практических сессий</h2>
+                <p class="section-subtitle">Теория + ежедневная практика в прямом эфире (2 недели утренних сессий по 45 минут)</p>
+            </div>
+            <p class="program__intro reveal">Собранные материалы являются не только логическим продолжением курса <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> и <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>, но и отдельным пособием для людей без предварительного глубокого погружения в нейрофизиологию духовного развития.</p>
+
+            <div class="program__visual reveal">
+                <img src="https://picsum.photos/seed/yoga/1200/600" alt="Утренняя практика йоги и медитации" loading="lazy">
+            </div>
+
+            <div class="program__theory reveal">
+                <h3>📚 Теоретический блок (8 занятий)</h3>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__head"><span class="num">1</span> Тантрический подход — цели, история, особенности, отличия от других направлений и основные принципы <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Важно начать не только с истории возникновения и развития тантрических техник, но и расставить точные акценты в подходах, которые часто дают искажённое представление об этом мощнейшем психофизическом инструменте.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head"><span class="num">2–4</span> Нейрофизиология тантрического мировоззрения: энергия, каналы, чакры, визуализация <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Несколько занятий будут посвящены нейрофизиологическим коррелятам основных аспектов тантрического подхода к развитию человека. Занятия 2, 3 и 4 раскрывают различные аспекты нейрофизиологии тантрического мировоззрения.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head"><span class="num">5–6</span> Сексуальный аспект в тантрических техниках: нейрофизиология секса, близости и оргазма <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Мы полноценно раскроем темы, которые волнуют многих. Рассмотрим нейрофизиологию полового поведения, связанные с ним вопросы и его роль в развитии, трансформации человека и социальном взаимодействии. Занятия 5 и 6 углубленно изучают сексуальный аспект с научной точки зрения.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head"><span class="num">7–8</span> Освоение самых эффективных техник тантрического подхода <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>В этом курсе уделяется больше внимания совместным практикам. Каждое утро в течение двух недель — прямой эфир на 45 минут, где мы вместе укрепляем и интегрируем новые навыки в повседневную жизнь. Занятия 7 и 8 посвящены систематизации и практическому применению изученных техник.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program__practice reveal">
+                <h3>🧘 Практический блок: 15 утренних сессий в прямом эфире</h3>
+                <ul>
+                    <li>Продолжительность: 45 минут каждая</li>
+                    <li>График: 2 недели ежедневных практик (каждое утро)</li>
+                    <li>Формат: прямой эфир с возможностью задавать вопросы</li>
+                    <li>Управляемые практики под руководством преподавателя</li>
+                    <li>Совместная работа в группе для усиления эффекта</li>
+                    <li>Записи всех практик доступны участникам курса</li>
+                </ul>
+                <p style="margin-top:20px; color: var(--text-muted);">Цель: укрепление и интеграция новых навыков в повседневную жизнь через совместные практики для освоения самых эффективных тантрических техник.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 5: RESULTS -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="results__header reveal">
+                <span class="section-tag">Результаты</span>
+                <h2 class="section-title">Результаты после курса</h2>
+                <p class="section-subtitle">Научно обоснованные изменения на уровне нервной системы, психики и тела</p>
+            </div>
+            <div class="results__grid">
+                <div class="results__card reveal"><div class="icon">🧠</div><h3>Снижение стресса и тревожности</h3><p>Тренировка областей мозга, отвечающих за саморегуляцию (префронтальная кора), уменьшение реактивности амигдалы, нормализация уровня кортизола через регулярную практику.</p></div>
+                <div class="results__card reveal"><div class="icon">😴</div><h3>Улучшение сна и восстановления</h3><p>Активация парасимпатической НС, баланс гипоталамо-гипофизарно-надпочечниковой оси, способность быстро переключаться из стресса в расслабление.</p></div>
+                <div class="results__card reveal"><div class="icon">🔥</div><h3>Возвращение телесной и эмоциональной чувствительности</h3><p>Развитие интероцепции, расширение спектра удовольствия и чувствительности, выход из состояния «жизни в голове».</p></div>
+                <div class="results__card reveal"><div class="icon">💑</div><h3>Более насыщенная сексуальная жизнь</h3><p>Больше ощущений, меньше тревоги и зажимов, способность оставаться в контакте с партнером, освоение техник энергетического оргазма.</p></div>
+                <div class="results__card reveal"><div class="icon">🧘</div><h3>Продвинутые навыки медитации</h3><p>Освоение визуализации, работы с энергией, трансформации эмоций, недуальных состояний — с глубоким пониманием нейрофизиологических механизмов.</p></div>
+                <div class="results__card reveal"><div class="icon">🛠️</div><h3>Практический инструментарий</h3><p>Набор конкретных техник под разные жизненные задачи: от быстрого засыпания и снятия острого стресса до работы с гневом, страстью и сексуальными блоками.</p></div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider" aria-hidden="true">
+
+    <!-- GALLERY STRIP -->
+    <section class="gallery-strip" aria-label="Галерея">
+        <div class="gallery-strip__grid">
+            <div class="gallery-strip__item reveal"><img src="https://picsum.photos/seed/g1/600/400" alt="Нейронаука и мозг" loading="lazy"></div>
+            <div class="gallery-strip__item reveal"><img src="https://picsum.photos/seed/g2/600/400" alt="Осознанность и фокус" loading="lazy"></div>
+            <div class="gallery-strip__item reveal"><img src="https://picsum.photos/seed/g3/600/400" alt="Медитация в группе" loading="lazy"></div>
+            <div class="gallery-strip__item reveal"><img src="https://picsum.photos/seed/g4/600/400" alt="Нервная система и практики" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- BLOCK 6: SUITS / NOT SUITS -->
+    <section class="suits" id="suits">
+        <div class="container">
+            <div class="suits__header reveal">
+                <span class="section-tag">Соответствие</span>
+                <h2 class="section-title">Подходит ли вам этот курс?</h2>
+            </div>
+            <div class="suits__grid">
+                <div class="suits__col suits__col--yes reveal">
+                    <h3>✅ Курс для вас, если:</h3>
+                    <ul>
+                        <li>Вы открыты к научному подходу и готовы работать с телом</li>
+                        <li>Хотите углубить практику медитации или освоить тантрические техники</li>
+                        <li>Ищете решение проблем со стрессом, сном, чувствительностью, сексуальностью</li>
+                        <li>Готовы к ежедневным практикам в течение 2 недель</li>
+                        <li>Прошли курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a> ИЛИ имеете базовый опыт медитации (от 3–6 месяцев)</li>
+                        <li>Хотите понимать механизмы работы практик, а не слепо следовать инструкциям</li>
+                    </ul>
+                </div>
+                <div class="suits__col suits__col--no reveal">
+                    <h3>❌ Курс НЕ для вас, если:</h3>
+                    <ul>
+                        <li>Вы ищете магические ритуалы, эзотерику или быстрое «просветление за 3 дня»</li>
+                        <li>У вас острые психические расстройства без наблюдения специалиста</li>
+                        <li>Вы совсем новичок в медитации (рекомендуем сначала базовый курс)</li>
+                        <li>Не готовы к регулярной практике и самостоятельной работе</li>
+                        <li>Ожидаете только теорию без практического применения</li>
+                        <li>Не готовы работать с темами сексуальности и телесности</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 7: AUTHOR -->
+    <section class="author" id="author">
+        <div class="container">
+            <div class="reveal"><span class="section-tag">Автор</span><h2 class="section-title">Об авторе курса</h2></div>
+            <div class="author__grid">
+                <div class="author__photo-wrap reveal">
+                    <img src="../images/leonid-author.jpg" alt="Леонид Кутузов — преподаватель курса Нейрофизиология тантры, президент Федерации йоги Санкт-Петербурга" loading="lazy">
+                </div>
+                <div class="author__bio reveal">
+                    <h3 class="author__name">Леонид Кутузов</h3>
+                    <p class="author__role">Президент Федерации йоги и медитации Санкт-Петербурга</p>
+                    <p><strong>Образование и квалификация:</strong> Биологический факультет МГУ им. М.В. Ломоносова; Институт «Прикладной неврологии» (Франция); обучение в Stanford University (США). Более 20 лет изучения нейрофизиологии медитации и йоги.</p>
+                    <p><strong>Практический опыт:</strong> С 28 лет регулярно посещает буддийские монастыри и ретриты по всей планете. Практикует и преподает традиции: Ваджраяна, Махаяна, Дзогчен (Ати-йога). Обучил более 1000 учеников.</p>
+                    <p>Автор курсов: <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a>, <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>, «Пробуждение через наслаждение», «Золотая коллекция медитаций», «Нейрохакинг для женщин», «Нейрофизиология осознанных движений. Искусство расслабления».</p>
+                    <p>Междисциплинарные научные знания о мозге позволяют Леониду активно использовать практические инструменты коррекции физического и психического здоровья, соединяя древние буддийские практики с современной нейронаукой.</p>
+                    <div class="author__quote">
+                        <p>«За 20 лет практики и преподавания я понял, что тантрические техники — это невероятно мощные инструменты работы с нервной системой. Однако большинство людей отталкивает эзотерический язык и мистификация этих практик. Мой путь от биолога до практика Ваджраяны научил меня: древние техники работают не потому, что "магические", а потому что точно воздействуют на конкретные системы мозга и тела. Я решил перевести тантрический подход на язык современной нейрофизиологии, чтобы сделать эти мощные практики доступными для тех, кто ищет реальные результаты. Этот курс — результат синтеза глубокого изучения тибетского буддизма, нейрофизиологии и многолетней личной практики. Здесь нет места шаманизму и эзотерике — только проверенные техники с научным объяснением того, как и почему они работают.»</p>
+                    </div>
+                    <div class="author__stats">
+                        <div class="author__stat"><strong>1000+</strong> учеников по всему миру</div>
+                        <div class="author__stat"><strong>4.9/5</strong> средний рейтинг курсов</div>
+                        <div class="author__stat"><strong>20+ лет</strong> практики в буддийских традициях</div>
+                        <div class="author__stat">Основатель <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуба «Вселенная Нейрохакинга»</a></div>
+                    </div>
+                    <p class="author__club-note">Курс — часть экосистемы клуба. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Подробнее о клубе</a>. Продолжение следует…</p>
+                    <div class="author__extra-img reveal">
+                        <img src="../images/leonid-practice.jpg" alt="Леонид Кутузов — практика медитации, курс Нейрофизиология тантры" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 8: FORMAT & PRICE -->
+    <section class="format" id="format">
+        <div class="container">
+            <div class="format__header reveal">
+                <span class="section-tag">Условия</span>
+                <h2 class="section-title">Что входит в курс</h2>
+            </div>
+            <p class="section-subtitle" style="text-align: center; margin: 0 auto 32px;">Все лекции доступны в записи. Дополнительные материалы и презентации прилагаются к занятиям. Оповещения — через Telegram-бота.</p>
+            <div class="how-it-works reveal">
+                <div class="how-it-works__item">
+                    <div class="how-it-works__icon">📹</div>
+                    <strong>Видеолекции в записи</strong>
+                    <span>8 теоретических занятий с презентациями и материалами</span>
+                </div>
+                <div class="how-it-works__item">
+                    <div class="how-it-works__icon">🌅</div>
+                    <strong>Прямые эфиры утром</strong>
+                    <span>15 сессий по 45 минут — практика вживую с преподавателем</span>
+                </div>
+                <div class="how-it-works__item">
+                    <div class="how-it-works__icon">📋</div>
+                    <strong>Материалы на GetCourse</strong>
+                    <span>Все ссылки и данные — в записи лекции на платформе GetCourse, чата нет</span>
+                </div>
+                <div class="how-it-works__item">
+                    <div class="how-it-works__icon">✈️</div>
+                    <strong>Оповещения в Telegram</strong>
+                    <span>Напоминания об эфирах и новые материалы — через Telegram-бота</span>
+                </div>
+                <div class="how-it-works__item">
+                    <div class="how-it-works__icon">📜</div>
+                    <strong>Сертификат по окончании</strong>
+                    <span>Подтверждение прохождения курса</span>
+                </div>
+            </div>
+            <div class="format__grid">
+                <div class="format__card reveal">
+                    <div class="icon">📚</div>
+                    <h3>Теоретический блок</h3>
+                    <ul>
+                        <li>8 видеолекций в записи с презентациями</li>
+                        <li>Дополнительные материалы и презентации прилагаются к занятиям</li>
+                        <li>Конспекты занятий и список научных источников по каждой теме</li>
+                        <li>Все ссылки и данные — в записи лекции на GetCourse</li>
+                        <li>Доступ к материалам — 6 месяцев</li>
+                    </ul>
+                </div>
+                <div class="format__card reveal">
+                    <div class="icon">🧘</div>
+                    <h3>Практический блок</h3>
+                    <ul>
+                        <li>15 утренних сессий — прямые эфиры каждое утро (2 недели)</li>
+                        <li>Продолжительность: 45 минут</li>
+                        <li>Управляемые практики под руководством преподавателя</li>
+                        <li>Вопросы в режиме реального времени</li>
+                        <li>Записи всех практик на 6 месяцев</li>
+                    </ul>
+                </div>
+                <div class="format__card reveal">
+                    <div class="icon">📋</div>
+                    <h3>Платформа и оповещения</h3>
+                    <ul>
+                        <li>Все лекции и материалы — на GetCourse</li>
+                        <li>Ссылки и дополнительные данные хранятся в записи каждой лекции</li>
+                        <li>Чата нет: всё необходимое — в личном кабинете на платформе</li>
+                        <li>Оповещения об эфирах и новостях курса — через Telegram-бота</li>
+                        <li>Доступ к записям в течение 6 месяцев</li>
+                        <li>Сертификат о прохождении курса</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="format__price-wrap reveal">
+                <p>Стоимость и условия</p>
+                <p class="format__price-wrap price"><del>49 900 ₽</del> <strong>29 900 ₽</strong> — ранняя цена</p>
+                <p>Доступ к записям лекций и практик — 6 месяцев. Рассрочка: возможна оплата в 2–3 платежа. Старт курса: [дата]</p>
+                <a href="#cta" class="btn btn-primary cta">Записаться на курс</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCK 9: FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <div class="faq__header reveal">
+                    <span class="section-tag">Вопросы</span>
+                    <h2 class="section-title">Частые вопросы</h2>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__head">Нужен ли опыт медитации для участия в курсе? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Желательно иметь базовый опыт медитации (3–6 месяцев регулярной практики) или пройти курс <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">«Эксперт медитации»</a> / <a href="https://neuro-universe.ru/neurophys" target="_blank" rel="noopener">«Избавление от ядов ума»</a>. Курс подходит и как отдельное пособие для людей с опытом самостоятельной практики. Если вы совсем новичок, рекомендуем начать с <a href="https://neuro-universe.ru/meditation" target="_blank" rel="noopener">базового курса медитации</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Это курс про секс или про медитацию? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Это курс про нейрофизиологию трансформации через тантрические техники. Сексуальный аспект — важная, но не единственная часть. Мы изучаем работу с дыханием и энергией, визуализации, трансформацию эмоций, развитие телесной чувствительности и нейрофизиологию сексуальности, близости и оргазма. Всё с научной точки зрения, без эзотерики.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Обязательно ли иметь партнера? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Нет, партнер не обязателен. Все практики адаптированы для сольной работы. Партнерские техники даются как опциональные. Курс одинаково полезен как для одиночек, так и для пар.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Это безопасно? Есть ли противопоказания? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Да, курс безопасен. Противопоказания: острые психические расстройства (психозы, тяжелая депрессия, БАР в острой фазе), эпилепсия, тяжелые сердечно-сосудистые заболевания. При хронических заболеваниях или наблюдении у психиатра/психотерапевта рекомендуем консультацию специалиста перед началом.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Есть ли чат? Где хранятся материалы и ссылки? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Чата нет. Все ссылки и данные хранятся в записи каждой лекции на платформе GetCourse — всё необходимое вы найдёте в личном кабинете. Оповещения о эфирах и новостях курса приходят через Telegram-бота.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Что делать, если пропущу утреннюю практику? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Все эфиры записываются и становятся доступны в течение нескольких часов на GetCourse. Доступ к записям — 6 месяцев. Для максимального эффекта рекомендуем по возможности присоединяться к живым практикам — совместная работа в группе усиливает эффект.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Будут ли научные источники? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Да. К каждой теме прилагается список исследований из нейробиологии, психофизиологии, исследований медитации и сексологии. Мы опираемся на научные данные.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Чем этот курс отличается от других курсов по тантре? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>Научный подход без эзотерики; глубокое объяснение нейрофизиологических механизмов; связь древних практик с современными исследованиями мозга; акцент на практическое применение; систематический подход с ежедневными практиками; логическое продолжение нейрофизиологии медитации.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__head">Можно ли получить возврат средств? <span class="accordion__icon">+</span></button>
+                        <div class="accordion__body">
+                            <div class="accordion__body-inner">
+                                <p>[Укажите вашу политику возврата]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider section-divider--gold" aria-hidden="true">
+
+    <!-- BLOCK 10: CTA + FORM -->
+    <section class="cta-section" id="cta">
+        <div class="cta-section__bg" aria-hidden="true"></div>
+        <div class="cta-section__overlay" aria-hidden="true"></div>
+        <div class="container">
+            <h2 class="cta-section__title reveal">Начните трансформацию сегодня</h2>
+            <p class="cta-section__text reveal">Присоединяйтесь к курсу и освойте тантрические техники через язык современной нейронауки — без эзотерики, с реальными результатами для снижения стресса, улучшения сексуальности и возвращения чувствительности тела.</p>
+            <p class="cta-section__bonus reveal"><del>49 900 ₽</del> <strong>29 900 ₽</strong> — ранняя цена. Доступ к записям — 6 месяцев. Все материалы и ссылки — на GetCourse в записи лекции, оповещения — через Telegram-бота. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a>. Продолжение следует… Курс начинается [дата].</p>
+
+            <form class="form-reg" id="formReg" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-success">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+                <div class="form-fields">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Телефон (опционально)">
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" name="privacy" id="privacy" required>
+                        <label for="privacy">Я согласен с политикой конфиденциальности</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Записаться</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div>
+                    <div class="footer__logo">Нейро<span>тантра</span></div>
+                    <p class="footer__tagline">Курс-ретрит «Нейрофизиология тантры» — тантра без эзотерики, с научным объяснением. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a> — neuro-universe.ru. Продолжение следует…</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:info@neuro-universe.ru">info@neuro-universe.ru</a></li>
+                        <li><a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга» — neuro-universe.ru</a></li>
+                        <li><a href="https://t.me/LeoKutuzov" target="_blank" rel="noopener">Telegram: @LeoKutuzov</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Юридические данные</h4>
+                    <ul>
+                        <li><span>ИП Кутузов Леонид Валерьевич</span></li>
+                        <li><span>ИНН 781426402134</span></li>
+                        <li><span>ОГРНИП 323784700247821</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#">Политика конфиденциальности</a> · <a href="#">Договор оферты</a> · <a href="#">Согласие на обработку персональных данных</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA -->
+    <a href="#cta" class="sticky-cta" id="stickyCta">Записаться на курс</a>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
+
+        // Mobile menu
+        const navBurger = document.getElementById('navBurger');
+        const navMobile = document.getElementById('navMobile');
+        navBurger.addEventListener('click', () => {
+            navMobile.classList.toggle('active');
+            document.body.style.overflow = navMobile.classList.contains('active') ? 'hidden' : '';
+        });
+        navMobile.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMobile.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Sticky CTA
+        const stickyCta = document.getElementById('stickyCta');
+        window.addEventListener('scroll', () => stickyCta.classList.toggle('visible', window.scrollY > 800));
+
+        // Accordion (program + faq)
+        document.querySelectorAll('.accordion__head').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.accordion__item');
+                const body = item.querySelector('.accordion__body');
+                const isOpen = item.classList.contains('active');
+                document.querySelectorAll('.accordion__item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.accordion__body').style.maxHeight = null;
+                });
+                if (!isOpen) {
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const revealEls = document.querySelectorAll('.reveal');
+        const reveal = () => {
+            revealEls.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 80) el.classList.add('visible');
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Form submit (Formspree or custom)
+        const formReg = document.getElementById('formReg');
+        if (formReg) {
+            formReg.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+                try {
+                    const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+                    if (res.ok) {
+                        form.classList.add('sent');
+                    } else {
+                        const json = await res.json();
+                        if (json.error) alert(json.error);
+                    }
+                } catch (err) {
+                    // Fallback: show success for demo / when Formspree not configured
+                    form.classList.add('sent');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
