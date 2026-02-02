@@ -1255,6 +1255,72 @@
             text-decoration: line-through;
             margin-right: 12px;
         }
+        .format__tariffs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .format__tariff {
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(107, 45, 45, 0.08) 100%);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.35s var(--ease);
+        }
+        .format__tariff:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        .format__tariff h3 {
+            font-family: var(--font-head);
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+        .format__tariff ul {
+            list-style: none;
+            text-align: left;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .format__tariff li {
+            padding: 6px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        .format__tariff li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .format__tariff .price {
+            font-family: var(--font-head);
+            font-size: 28px;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        .format__tariff .price del {
+            font-size: 18px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
+        .format__tariff .price-note {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        .format__tariff .btn { margin-top: 0; width: 100%; }
+        @media (max-width: 900px) {
+            .format__tariffs { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+        }
         .cta-section__bonus del {
             color: var(--text-muted);
             text-decoration: line-through;
@@ -2067,7 +2133,7 @@
         <div class="container">
             <h2 class="cta-section__title reveal">Начните трансформацию сегодня</h2>
             <p class="cta-section__text reveal">Присоединяйтесь к курсу и освойте тантрические техники через язык современной нейронауки — без эзотерики, с реальными результатами для снижения стресса, улучшения сексуальности и возвращения чувствительности тела.</p>
-            <p class="cta-section__bonus reveal"><del>49 900 ₽</del> <strong>29 900 ₽</strong> — ранняя цена. Доступ к записям — 6 месяцев. Все материалы и ссылки — на GetCourse в записи лекции, оповещения — через Telegram-бота. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a>. Курс: 14–29 марта 2026.</p>
+            <p class="cta-section__bonus reveal">Тарифы от <strong>39 900 ₽</strong> (Базовый) до <strong>119 000 ₽</strong> (VIP). Ранние цены ограничены по времени. Все материалы — на GetCourse, оповещения — через Telegram-бота. <a href="https://neuro-universe.ru" target="_blank" rel="noopener">Клуб «Вселенная Нейрохакинга»</a>. Курс: 14–29 марта 2026.</p>
 
             <form class="form-reg" id="formReg" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-success">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
